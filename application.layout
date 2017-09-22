@@ -48,7 +48,7 @@
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
     <script>
-        setEndPoint('//carlingwood.mallmaverick.com/api/v4/carlingwood/all.json');
+        setEndPoint('//billingsbridge.mallmaverick.com//api/v4/billings/all.json');
         setSocialEndPoint('//halifaxcentre.mallmaverick.com/api/v2/halifaxcentre/social.json')
     </script>
     
