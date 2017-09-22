@@ -18,7 +18,7 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/mall_walkers">Mall Walkers</option>
-            <option value="/charities">Charities & Non-Profit</option>
+            <option value="/community_partners">Community Partners</option>
         </select>
     </h5>
 </div>
