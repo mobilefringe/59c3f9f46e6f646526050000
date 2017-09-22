@@ -4,25 +4,21 @@
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
-        <div class="col-md-3">
-            <h5><a href="/customer_services">CUSTOMER SERVICES</a></h5>
+        <div class="col-md-4">
+            <h5><a href="/jobs">JOBS</a></h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
+            <h5><a href="/accessibility">ACCESSIBILITY</a></h5>
+        </div>
+        <div class="col-md-4">
             <h5 class="active_heading">SECURITY</h5>
-        </div>
-        <div class="col-md-3">
-            <h5><a href="/community_services">COMMUNITY</a></h5>
-        </div>
-        <div class="col-md-3">
-            <h5><a href="/green_initiatives">GREEN INITIATIVES</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/customer_services">Customer Services</option>
-            <option value="/community_services">Community Services</option>
-            <option value="/green_initiatives">Green Initiatives</option>
+            <option value="/jobs">Jobs</option>
+            <option value="/accessibility">Accessibility</option>
         </select>
     </h5>
 </div>
