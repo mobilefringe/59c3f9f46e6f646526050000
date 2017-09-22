@@ -95,15 +95,13 @@
                 </li>
                 <li>
                     <a href="#" class="submenu_expander">
-                        VISIT
+                        PLAN YOUR VISIT
                         <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
 						<li><a href="/hours">Hours</a></li>
 						<li><a href="/directions">Directions</a></li>
-						<li><a href="/gift_cards">Gift Cards</a></li>
-						<li><a href="/"></a></li>
 					</ul>
                 </li>
                 <li>
@@ -113,10 +111,10 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/customer_services">Customer Services</a></li>
-                        <li><a href="/security">Security</a></li>
-                        <li><a href="/community_services">Community Services</a></li>
-                        <li><a href="/green_initiatives">Green Initiatives</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/gift_cards">Gift Cards</a></li>
+                        <li><a href="/free_wifi">Free WIFI</a></li>
+                        <li><a href="/style_services">Style Services</a></li>
 					</ul>
                 </li>
                 <li>
@@ -127,9 +125,20 @@
                     </a>
                     <ul class="sub_menu hidden_now">
                         <li><a href="/jobs" target="_blank">Jobs</a></li>
-                        <li><a href="/">Community Partners</a></li>
-						<li><a href="/">Charities & Non-Profits</a></li>
-						<li><a href="/accessibility" target="_blank">Accessibility</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
+						<li><a href="/security">Security</a></li>
+					</ul>
+                </li>
+                <li>
+                    <a href="#" class="submenu_expander">
+                        COMMUNITY
+                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
+						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
+                    </a>
+                    <ul class="sub_menu hidden_now">
+                        <li><a href="/mall_walkers">Mall Walkers</a></li>
+                        <li><a href="/charities">Charities & Non-Profits</a></li>
+						<li><a href="/community_partners">Community Partners</a></li>
 					</ul>
                 </li>
                 <li>
@@ -141,25 +150,9 @@
                     <ul class="sub_menu hidden_now">
                         <li><a href="/contact_us">Contact Us</a></li>
                         <li><a href="/leasing">Leasing</a></li>
-                        
                         <li><a href="/privacy_policy">Privacy Policy</a></li>
-						<li><a href="/leasing">Leasing</a></li>
-						<li><a href="/specialty_leasing" target="_blank">Specialty Leasing</a></li>
 					</ul>
                 </li>
-     <!--           <li>-->
-     <!--               <a href="#" class="submenu_expander">-->
-     <!--                   CONTACT US-->
-     <!--                   <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">-->
-					<!--	<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">-->
-     <!--               </a>-->
-     <!--               <ul class="sub_menu hidden_now">-->
-     <!--                   <li><a href="/hours">Shopping Hours</a></li>-->
-					<!--	<li><a href="/contact_us">Contact Us</a></li>-->
-					<!--	<li><a href="/leasing">Leasing</a></li>-->
-					<!--	<li><a href="/security">Security</a></li>-->
-					<!--</ul>-->
-     <!--           </li>-->
             </ul>
         </div>
     </div>
