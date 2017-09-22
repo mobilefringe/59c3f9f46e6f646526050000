@@ -4,17 +4,14 @@
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
-        <div class="col-md-3">
-            <h5><a href="/customer_services">CUSTOMER SERVICES</a></h5>
+        <div class="col-md-4">
+            <h5><a href="/mall_walkers">MALL WALKERS</a></h5>
         </div>
-        <div class="col-md-3">
-            <h5><a href="/security">SECURITY</a></h5>
+        <div class="col-md-4">
+            <h5><a href="/charities">CHARITIES & NON_PROFITS</a></h5>
         </div>
-        <div class="col-md-3">
-            <h5 class="active_heading">COMMUNITY</h5>
-        </div>
-        <div class="col-md-3">
-            <h5><a href="/green_initiatives">GREEN INITIATIVES</a></h5>
+        <div class="col-md-4">
+            <h5 class="active_heading">COMMUNITY PARTNERS</h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
