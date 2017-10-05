@@ -414,7 +414,7 @@ function renderPromotions(container, template, collection, centre){
             }
             
             if (store_details.store_front_url_abs.indexOf('missing.png') > 0){
-                val.image_url  = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png"
+                val.image_url  = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg"
             }
             
             if(val.cat_list != null){
@@ -483,7 +483,7 @@ function renderPromoDetails(container, template, collection, centre){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg_Logo_New.png";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -550,7 +550,7 @@ function renderPostDetails(container, template, collection, blog_posts){
     var template_html = $(template).html();
     $.each(collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1507226103000/billingsbridge_default.jpg";
         } else {
             val.post_image = val.image_url;
         }
@@ -587,7 +587,7 @@ function renderPostDetails(container, template, collection, blog_posts){
             }
         }
 
-        val.twitter_title = val.title + " via @CarlingwoodSCTR";
+        val.twitter_title = val.title + " via @Billings_Bridge";
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
@@ -615,7 +615,7 @@ function renderSinglePost(container, template, main_post){
     
     main_post.slug = "posts/" + main_post.slug;
     
-    main_post.twitter_title = main_post.title + " via @CarlingwoodSCTR";
+    main_post.twitter_title = main_post.title + " via @Billings_Bridge";
     
     var rendered = Mustache.render(template_html, main_post);
     item_list.push(rendered);
