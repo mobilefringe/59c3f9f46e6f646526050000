@@ -66,7 +66,7 @@
                 } 
             });
             if(published_promos.length > 0){
-                renderEvents("#promos_container","#promos_template", published_promos, "Carlingwood Shopping Centre");
+                renderEvents("#promos_container","#promos_template", published_promos, "Billings Bridge Shopping Centre");
             } else {
                 $('#no_promos').show()
             }
