@@ -533,7 +533,7 @@ function renderPosts(container, template, collection){
         
         val.slug = "posts/" + val.slug;
         
-        val.twitter_title = val.title + " via @CarlingwoodSCTR";
+        val.twitter_title = val.title + " via @Billings_Bridge";
         
         val.counter = counter;
         
