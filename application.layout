@@ -272,7 +272,6 @@
                         <br/>
                         Administration: <a href="tel:613-733-2595">(613) 733-2595</a><br />
                         <a href="http://www.cushmanwakefield.ca/en/" target="_blank">
-                            <!--<img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1464722874000/Picture1.png" class="vic_logo" alt="">-->
                             <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1509381758000/CW Logos-_CW_Colorlogo.png" class="" alt="" style="width:140px;padding-top: 10px;">
                         </a>
                     </p>
@@ -290,8 +289,7 @@
                 if (messages != undefined){
                     if (messages.length == 0){
                         $('.news-ticker').hide();
-                    }
-                    else{
+                    } else {
                         $.each(messages, function(key ,val){
                             $('#bulletin').append('<li><strong>' + val.messages[0].title + ' </strong>'  + val.messages[0].body +  '</li>')
                         });
@@ -302,26 +300,22 @@
                             
                             var currentSlide = 0;
                             var slideCount = ($('.news-ticker li').length) - 1;
-                            
                             var startTicker = setInterval(function(){
                             
-                                $('.news-ticker ul li').eq(currentSlide).fadeOut(500)
-                                
-                                if (currentSlide < slideCount) {
-                                    currentSlide += 1;
-                                } else {
-                                    currentSlide = 0;
-                                }
-                                
-                                $('.news-ticker ul li').eq(currentSlide).fadeIn(500)
+                            $('.news-ticker ul li').eq(currentSlide).fadeOut(500)
                             
+                            if (currentSlide < slideCount) {
+                                currentSlide += 1;
+                            } else {
+                                currentSlide = 0;
+                            }
+                            
+                            $('.news-ticker ul li').eq(currentSlide).fadeIn(500)
                             }, tickerSpeed);
-                            
                         }
                     $('.news-ticker').show();
                     }
-                }
-                else{
+                } else {
                     $('.news-ticker').hide();
                 }
             });
