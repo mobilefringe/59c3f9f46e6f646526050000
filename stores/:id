@@ -27,9 +27,9 @@
                     <div class="col-md-8">
                         <div class="details_desc">
                             <img class="margin_20" style="{{show}}" src="{{store_front}}"/>
-                            {{{rich_description}}}
+                            <div>{{{rich_description}}}</div>
+                            <div id="mapsvg_store_detail" class="mobile_padding"></div>
                         </div>
-                        
                     </div>
                     <div class="col-md-4">
                         <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
