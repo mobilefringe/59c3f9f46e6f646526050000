@@ -49,7 +49,7 @@
     
     <script>
         setEndPoint('//billingsbridge.mallmaverick.com/api/v4/billings/all.json');
-        // setSocialEndPoint('//billingsbridge.mallmaverick.com/api/v2/billings/social.json')
+        setSocialEndPoint('//billingsbridge.mallmaverick.com/api/v2/billings/social.json')
     </script>
     
     <!--<script>-->
