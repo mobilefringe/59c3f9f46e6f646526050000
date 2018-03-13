@@ -26,9 +26,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="details_desc">
-                            {{#store_front}}
-                                <img class="margin_20" src="{{store_front}}"/>
-                            {{/store_front}}
+                            <img class="margin_20" style="{{show}}" src="{{store_front}}"/>
                             {{{rich_description}}}
                         </div>
                         
