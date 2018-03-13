@@ -112,8 +112,9 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
-            console.log(store_details)
             renderStoreDetails("#store_container","#store_template", store_details, slug);
+            
+            //PROMOS
             var store_promo_ids = store_details.promotions
             var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
             var published_promos = [];
@@ -132,6 +133,7 @@
                 $('#promo_anchor').hide()
             }
             
+            // JOBS
             var store_job_ids = store_details.jobs
             var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
             var published_jobs = [];
@@ -149,8 +151,10 @@
                 $('#jobs_main').hide();
                 $('#job_anchor').hide()
             }
+            
             show_content();
             
+            // MAP
             var stores = getStoresList();
             var regions = {}
             $.each( stores , function( key, val ) {
@@ -168,7 +172,6 @@
     })
     
     function load_map(reg, store_details){
-        console.log(store_details)
         this_region = {};
         this_region = store_details.svgmap_region;
         if(this_region != null) {
