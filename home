@@ -18,53 +18,46 @@
             </div>
             
             <div class="feature_item">
-                <!--<a class="show_phone" href="https://twitter.com/Billings_Bridge" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png"  alt="Instagram Logo"></a>-->
-                <div class="social">
-                    <a href="https://www.instagram.com/billingsbridge" target="_blank">
-                        <div class="social_box text-center" d="social_insta">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png" class="" alt="tweet">
-                            <div>
-                                <h5 class="insta">FOLLOW US ON INSTAGRAM</h5>
-                            </div>
+                <a href="https://www.instagram.com/billingsbridge" target="_blank">
+                    <div class="social_box text-center" d="social_insta">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png" class="" alt="tweet">
+                        <div>
+                            <h5 class="insta">FOLLOW US ON INSTAGRAM</h5>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
                 <div id="feature_2" class="position_relative"></div>
                 <div id="feature_3" class="position_relative"></div>
             </div>
             
             <div class="feature_item">
                 <div id="feature_4" class="position_relative"></div>
-                <!--<a href="https://www.facebook.com/BillingsBridge" target="_blank" class="show_phone">-->
-                <!--    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464191314000/hsc_facebook-1.jpg" alt="fb">-->
-                <!--</a>-->
-                <div class="social">
-                    <div class="social_box text-center" id="social_fb">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
-                        <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
-                        <p>
-                            <a  class="social_link_blank" href="https://www.facebook.com/BillingsBridge" target="_blank">Facebook/BillingsBridge</a><br/>
-                            <span id="latest_fb_date"></span>    
-                        </p>
-                    </div>
+
+                <div class="social_box text-center" id="social_fb">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
+                    <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
+                    <p>
+                        <a  class="social_link_blank" href="https://www.facebook.com/BillingsBridge" target="_blank">Facebook/BillingsBridge</a><br/>
+                        <span id="latest_fb_date"></span>    
+                    </p>
+                </div>
                 </div>
                 <div id="feature_5" class="position_relative"></div>
             </div>
             
             <div class="feature_item">
                 <div class="social">
-                    <!--<a href="/hours" class="show_phone">-->
-                    <!--    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464118541000/hsc_hours.jpg" class="" alt="hours">-->
-                    <!--</a>-->
-                    <a href="/hours" class="social_box text-center hours_box" id="hours_box">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
-                        <div id="home_hours_container2" class="home_feature_hours">
-                            <script id="home_hours_template2" type="x-tmpl-mustache/text">
-                                <h5>SHOPPING HOURS</h5>
-                                <span class="hours_today">{{h}}</span>
-                            </script>
+                    <a href="/hours" class=" hours_box" id="hours_box">
+                        <div class="social_box text-center">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
+                            <div id="home_hours_container2" class="home_feature_hours">
+                                <script id="home_hours_template2" type="x-tmpl-mustache/text">
+                                    <h5>SHOPPING HOURS</h5>
+                                    <span class="hours_today">{{h}}</span>
+                                </script>
+                            </div>
+                            <p class="hours_link">See More Hours</p>
                         </div>
-                        <p class="hours_link">See More Hours</p>
                     </a>
                 </div>
                 <div id="feature_6" class="position_relative"></div>
