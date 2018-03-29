@@ -2419,6 +2419,9 @@ gallery:after{
     .popup_home img {
         min-width: 290px;
     }
+    .social_box {
+        height: 169px;
+    } 
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
