@@ -1628,6 +1628,11 @@ gallery:after{
 .promo_details_container{
     margin-top:25px;
 }
+@media(max-width: 425px){
+    .social_box {
+        height: 194px;
+    }    
+} 
 
 @media(max-width: 768px){
     .popup_home img {
