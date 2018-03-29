@@ -2406,7 +2406,7 @@ gallery:after{
     .social_box {
         height: 194px;
     } 
-    #latest_fb, #latest_fb_date {
+    .hours_link, #latest_fb, #latest_fb_date {
         display: none;
     }
 }
