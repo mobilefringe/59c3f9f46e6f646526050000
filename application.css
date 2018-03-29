@@ -1657,6 +1657,7 @@ gallery:after{
         font-size: 20px;
     }
     .hours_link {
+        left: calc(50%);
         transform: translate(-50%);
     }
     body{
