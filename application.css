@@ -2406,6 +2406,10 @@ gallery:after{
     .social_box {
         height: 194px;
     } 
+    .feature_item div .insta {
+        margin: 0;
+        font-size: 18px;
+    }
     .hours_today, .hours_link, #latest_fb, #latest_fb_date {
         display: none;
     }
