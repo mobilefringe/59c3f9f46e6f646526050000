@@ -23,7 +23,7 @@
                     <div class="social_box hidden_phone text-center" d="social_insta">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png" class="" alt="tweet">
                         <div>
-                            <h5>FOLLOW US ON INSTAGRAM</h5>
+                            <h5 class="insta">FOLLOW US ON INSTAGRAM</h5>
                         </div>
                     </div>
                 </a>
