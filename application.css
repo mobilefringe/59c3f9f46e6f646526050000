@@ -1642,6 +1642,10 @@ gallery:after{
     .feature_item div .insta {
         margin: 50px 0;
     }
+    .feature_item p {
+        font-size: 28px;
+        line-height: 28px;
+    }
     .feature_item img:hover{
         transform: scale(1);
     }
