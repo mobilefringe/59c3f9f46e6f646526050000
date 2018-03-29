@@ -19,17 +19,14 @@
             
             <div class="feature_item">
                 <a class="show_phone" href="https://twitter.com/Billings_Bridge" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png"  alt="Instagram Logo"></a>
-                <div class="social_box hidden_phone text-center" d="social_twitter">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png" class="" alt="tweet">
-                    <div>
-                        <h5>FOLLOW US ON INSTAGRAM</h5>
-                        <!--<a href="#" id="latest_tweet_link" target="_blank"><p id="latest_tweet" class="latest_post"></p></a>-->
-                        <!--<p>-->
-                        <!--    <a class="social_link_blank" href="https://twitter.com/Billings_Bridge" target="_blank">@Billings_Bridge</a><br/>-->
-                        <!--    <span id="latest_tweet_date"></span>-->
-                        <!--</p>-->
+                <a href="" target="_blank">
+                    <div class="social_box hidden_phone text-center" d="social_insta">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/png/1522339118000/BB_Website_Instagram_WithLines.png" class="" alt="tweet">
+                        <div>
+                            <h5>FOLLOW US ON INSTAGRAM</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div id="feature_2" class="position_relative"></div>
                 <div id="feature_3" class="position_relative"></div>
             </div>
