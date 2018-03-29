@@ -47,17 +47,15 @@
             
             <div class="feature_item">
                 <div class="social">
-                    <a href="/hours" class=" hours_box" id="hours_box">
-                        <div class="social_box text-center">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
-                            <div id="home_hours_container2" class="home_feature_hours">
-                                <script id="home_hours_template2" type="x-tmpl-mustache/text">
-                                    <h5>SHOPPING HOURS</h5>
-                                    <span class="hours_today">{{h}}</span>
-                                </script>
-                            </div>
-                            <p class="hours_link">See More Hours</p>
+                    <a href="/hours" class="social_box text-center hours_box" id="hours_box">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
+                        <div id="home_hours_container2" class="home_feature_hours">
+                            <script id="home_hours_template2" type="x-tmpl-mustache/text">
+                                <h5>SHOPPING HOURS</h5>
+                                <span class="hours_today">{{h}}</span>
+                            </script>
                         </div>
+                        <p class="hours_link">See More Hours</p>
                     </a>
                 </div>
                 <div id="feature_6" class="position_relative"></div>
