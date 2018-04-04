@@ -22,13 +22,13 @@
                     <!-- equired data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" -->
                 </div>
             </div>
-            
             <div class="margin_20"></div>
             <div class="row">
                 <div class="col-sm-12">
                     <label class="agree_terms">
-                        <input id="agree_terms" type="checkbox" required data-validation="required" tabindex="3"/> 
-                            I agree to receive communications from Billings Bridge Shopping Centre.
+                        <input id="agree_terms" type="checkbox" required tabindex="3"/> 
+                        <!-- data-validation="required" -->
+                        I agree to receive communications from Billings Bridge Shopping Centre.
                     </label>
                 </div>
             </div>
@@ -52,7 +52,7 @@ $(document).ready(function(e){
     function renderAll(){
         show_content();
     
-        $.validate();
+        // $.validate();
     }
     loadMallDataCached(renderAll); 
 })
