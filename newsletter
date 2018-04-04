@@ -48,7 +48,30 @@ $(document).ready(function(e){
     init(e);
     function renderAll(){
         show_content();
+        
+        $("#subForm").submit(function( e ) {
+            e.preventDefault();
+            // if ($("#agree_terms").prop("checked") != true){
+            //     alert("Please agree to receive newsletters from Billings Bridge Shopping Centre.");
+            //     $("#agree_terms").focus();
+            // } else {
+                $.getJSON(
+                    this.action + "?callback=?",
+                    $(this).serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
+                            $("#thank_you").fadeIn();
+                            $('#subForm').trigger('reset')
+                        }
+                });
+            // }
+        });
     }
     loadMallDataCached(renderAll); 
 });
+
+
 </script>
+    
