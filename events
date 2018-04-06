@@ -44,6 +44,11 @@
                 </div>
             </div>
         </div>
+        <div class="row" id="no_events">
+            <div class="col-md-12">
+                <p>There are no Events scheduled at this time. Please check back soon.</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -68,7 +73,7 @@
             if(published_promos.length > 0){
                 renderEvents("#promos_container","#promos_template", published_promos, "Billings Bridge Shopping Centre");
             } else {
-                $('#no_promos').show()
+                $('#no_events').show()
             }
             show_content();
         }
