@@ -49,21 +49,21 @@ $(document).ready(function(e){
     function renderAll(){
         show_content();
         
-        $("#subForm").submit(function( e ) {
-            e.preventDefault();
-            $.getJSON(
-                this.action + "?callback=?",
-                $(this).serialize(),
-                function (data) {
-                    if (data.Status === 400) {
-                        alert("Please try again later.");
-                    } else { // 200
-                        $("#thank_you").fadeIn();
-                        $('#subForm').trigger('reset')
-                    }
-                }
-            );
-        });
+        // $("#subForm").submit(function( e ) {
+        //     e.preventDefault();
+        //     $.getJSON(
+        //         this.action + "?callback=?",
+        //         $(this).serialize(),
+        //         function (data) {
+        //             if (data.Status === 400) {
+        //                 alert("Please try again later.");
+        //             } else { // 200
+        //                 $("#thank_you").fadeIn();
+        //                 $('#subForm').trigger('reset')
+        //             }
+        //         }
+        //     );
+        // });
     }
     
     loadMallDataCached(renderAll); 
