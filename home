@@ -121,7 +121,7 @@
                 $('#latest_fb').text(latest_fb_post.text)
             }
         } else {
-            $('#latest_fb').text("Click here to see our latest post!")
+            $('#latest_fb').text("Check out our page to see our latest post!")
         }
         $('#latest_fb_link').attr('href', latest_fb_post.link)
         var fb_date = new Date(latest_fb_post.created_at.split(',')[0])
