@@ -8,7 +8,7 @@
     <!--<h3>Billings Bridge Shopping Centre</h3>-->
     <!--<p>Fall Into Fashion</p>-->
     <!---->
-    <div class="slides" id="home_banner">
+    <div class="position-relative" id="home_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
             {{#url}}<a href="{{url}}" {{css}} onclick="{{noLink}}">{{/url}}
                 <div class="hero_banner" style="background-image: url({{image_url}})"></div>
