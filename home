@@ -8,7 +8,7 @@
     <!--<h3>Billings Bridge Shopping Centre</h3>-->
     <!--<p>Fall Into Fashion</p>-->
     <!---->
-    <div class="position-relative" id="home_banner">
+    <div id="home_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
             {{#url}}<a href="{{url}}" {{css}} onclick="{{noLink}}">{{/url}}
                 <div class="hero_banner" style="background-image: url({{image_url}})"></div>
@@ -16,15 +16,7 @@
         </script>
     </div>
     <div class="banner_text" id="welcome_msg_container">
-        <script id="welcome_msg_template" type="x-tmpl-mustache/text">
-            {{#welcome_message}}<h3>
-                {{welcome_message}}
-            </h3>{{/welcome_message}}
-            {{#description}}<p>
-                {{description}}
-            </p>{{/description}}
-            <a class="animated_btn" href="/stores">visit our stores</a>
-        </script>
+        
     </div>
 </div>
 <div class="content_container main_container">
@@ -86,6 +78,16 @@
         </div>
     </div>
 </div>
+<script id="welcome_msg_template" type="x-tmpl-mustache/text">
+            {{#welcome_message}}<h3>
+                {{welcome_message}}
+            </h3>{{/welcome_message}}
+            {{#description}}<p>
+                {{description}}
+            </p>{{/description}}
+            <a class="animated_btn" href="/stores">visit our stores</a>
+        </script>
+        
 <style>
     .newsletter_container{
         margin-top:0;
