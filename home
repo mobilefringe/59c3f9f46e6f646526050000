@@ -77,6 +77,15 @@
         </div>
     </div>
 </div>
+ <script id="welcome_msg_template" type="x-tmpl-mustache/text">
+            {{#welcome_message}}<h3>
+                {{welcome_message}}
+            </h3>{{/welcome_message}}
+            {{#description}}<p>
+                {{description}}
+            </p>{{/description}}
+            <a class="animated_btn" href="/stores">visit our stores</a>
+        </script>
 <style>
     .newsletter_container{
         margin-top:0;
