@@ -1759,9 +1759,14 @@ gallery:after{
         width:49%;
         float:left;
     }
-    .hero_banner h3{
+    .hero_banner {
+        h3{
         font-size:28px;
         padding-top:0px;
+        }
+        .banner_text{
+            top:40%;
+        }
     }
     .site_search_results h2{
         padding: 15px 12px;
