@@ -466,6 +466,7 @@ h4 {
     background-repeat: no-repeat; 
     background-position: center center;
     height:540px;
+    position:relative;
     h3 {
         margin:0;
         font-size: 54px;
