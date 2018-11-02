@@ -7,7 +7,7 @@
 <div class="hero_banner text-center">
     <!--<h3>Billings Bridge Shopping Centre</h3>-->
     <!--<p>Fall Into Fashion</p>-->
-    <!--<a class="animated_btn" href="/stores">visit our stores</a>-->
+    <!---->
     <ul class="slides" id="home_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
             <li class="position_relative">
@@ -17,6 +17,17 @@
             </li>
         </script>
     </ul>
+    <div class="banner_text" id="welcome_msg_container">
+        <script id="welcome_msg_template" type="x-tmpl-mustache/text">
+            {{#welcome_message}}<h3>
+                {{welcome_message}}
+            </h3>{{/welcome_message}}
+            {{#description}}<p>
+                {{description}}
+            </p>{{/description}}
+            <a class="animated_btn" href="/stores">visit our stores</a>
+        </script>
+    </div>
 </div>
 <div class="content_container main_container">
     <div class="feature_items_box mobile_padding">
