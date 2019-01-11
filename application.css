@@ -470,7 +470,7 @@ h4 {
     h3 {
         margin:0;
         font-size: 54px;
-        color: #FFF;
+        color: black;
         letter-spacing: 4px;
         // padding-top: 140px;
         margin-bottom: 10px;
@@ -479,7 +479,7 @@ h4 {
     }
     p{
         font-size: 24px;
-        color: white;
+        color: black;
         letter-spacing: 0.5px;
         margin-bottom:32px;
         font-family: 'Open Sans Condensed';
@@ -488,7 +488,7 @@ h4 {
     a{
         font-weight: 100;
         font-size: 22px;
-        color: white;
+        color: black;
         letter-spacing: 0.35px;
         border: 1px solid white;
         padding: 15px 35px 20px;
@@ -568,7 +568,8 @@ h4 {
         text-transform: uppercase;
     }
 }
-.banner_image_div{
+.
+_image_div{
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: 50%;
