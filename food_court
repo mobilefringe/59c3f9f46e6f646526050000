@@ -6,7 +6,7 @@
 <div class="store_list_head main_container ">
     <div class="row hidden_phone">
         <div class="col-md-4">
-            <h5><a href="/stores">Shops and Services</a></h5>
+            <h5><a href="/stores">Shops & Services</a></h5>
         </div>
         <div class="col-md-4">
             <h5 class="active_heading">Food Court</h5>
