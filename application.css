@@ -761,12 +761,6 @@ h4 {
             background-image: url(//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1503081138000/icon_pinterest-on.png);
         }
     }
-    #social_google {
-        background-image: url(//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1464795117000/icon_gplus.png);
-        &:hover {
-            background-image: url(//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461853198000/icon_gplus_hover.png);
-        }
-    }
     #social_sc {
         background-image: url(//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1503080907000/TC_social_snapchat.png);
         &:hover {
