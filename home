@@ -147,12 +147,7 @@
             } else {
                 $('#latest_fb').text(latest_fb_post.text)
             }
-        }
-        // } else {
-        //     $('#latest_fb').text("Check out our page to see our latest post!")
-        // }
-        
-        if (latest_fb_post == undefined) {
+        } else {
             $('#latest_fb').text("Check out our page to see our latest post!")
         }
         
