@@ -156,7 +156,7 @@
             var fb_date = new Date(latest_fb_post.created_at.split(',')[0])
             $('#latest_fb_date').text(get_month(fb_date.getMonth()) + " " + fb_date.getDate())
         } else {
-            return null
+            $('#latest_fb').text("Check out our page to see our latest post!")
         }
     }
 </script>
