@@ -150,7 +150,7 @@
         } else {
             $('#latest_fb').text("Check out our page to see our latest post!")
         }
-        console.log(latest_fb_post.text);
+        console.log(latest_fb_post.text, 'hello');
         
         $('#latest_fb_link').attr('href', latest_fb_post.link)
         var fb_date = new Date(latest_fb_post.created_at.split(',')[0])
