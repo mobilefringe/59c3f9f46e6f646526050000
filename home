@@ -149,7 +149,7 @@
                 $('#latest_fb').text(latest_fb_post.text)
             }
         } 
-        if (latest_fb_post === undefined) {
+        if ('#latest_fb_post' === undefined) {
             $('#latest_fb').text("Check out our page to see our latest post!")
         }
         
