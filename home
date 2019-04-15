@@ -85,7 +85,7 @@
     {{#description}}<p>
         {{description}}
     </p>{{/description}}
-    // <a class="animated_btn" href="/stores">visit our stores</a>
+
 </script>
         
 <style>
