@@ -3,6 +3,7 @@
         <script id="banner_template" type="x-tmpl-mustache/text">
                 <div class="hero_banner" style="background-image: url({{image_url}})">
                     <div class="banner_text" id="welcome_msg_container"></div>
+                    <a href="#" class="time_btn animated_btn">Buy tickets</a>
                 </div>
             </a>
         </script>
