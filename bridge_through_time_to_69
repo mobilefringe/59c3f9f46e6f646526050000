@@ -1,0 +1,78 @@
+<div class="text-center">
+    <div id="time_banner">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+                <div class="hero_banner" style="background-image: url({{image_url}})">
+                    <div class="banner_text" id="welcome_msg_container"></div>
+                </div>
+            </a>
+        </script>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banners = getBanners();
+            var first_banner = banners[0];
+            renderBanner('#banner_template','#home_banner',banners);
+            
+            var property = [getPropertyDetails()];
+            renderGeneral('#welcome_msg_container','#welcome_msg_template',property);
+            
+            loadSocialFeeds(render_social)
+            renderFeatureItems();
+            var today_hours = getTodaysHours();
+            renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours)   
+            show_content();
+            
+            if($.cookie("popup_viewed") != "true"){
+                $.cookie("popup_viewed", "true", { expires: 1 });
+                var popup = getPopups()[0];
+                if (popup != undefined){
+                    $('.popup_home a').attr('href', popup.photo_link)
+                    $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                    $('.popup_home').show()
+                }
+            }
+            $('.close_popup, .custom_backdrop').click(function(){
+                $(".modal-backdrop").remove();
+		        $(".popup_home").remove();
+            });
+        }
+        loadMallDataCached(renderAll); 
+    });
+    
+    function render_social(){
+        var social_feed = getSocialFeed()
+        var latest_tweet = social_feed.twitter[0]
+        var latest_fb_post = social_feed.facebook[0]
+        if(latest_tweet.text.length > 100){
+            $('#latest_tweet').text(latest_tweet.text.substr(0,100) + "...")
+        } else {
+            $('#latest_tweet').text(latest_tweet.text)
+        }
+        $('#latest_tweet_link').attr('href', latest_tweet.link)
+        var tweet_date = new Date(latest_tweet.created_at.split(',')[0])
+        $('#latest_tweet_date').text(get_month(tweet_date.getMonth()) + " " + tweet_date.getDate())
+        
+        if (latest_fb_post.text.length > 0) {
+            if(latest_fb_post.text.length > 100){
+                $('#latest_fb').text(latest_fb_post.text.substr(0,100) + "...")
+            } else {
+                $('#latest_fb').text(latest_fb_post.text)
+            }
+        } else {
+            $('#latest_fb').text("Check out our page to see our latest post!")
+        }
+        
+        $('#latest_fb_link').attr('href', latest_fb_post.link)
+        var fb_date = new Date(latest_fb_post.created_at.split(',')[0])
+        $('#latest_fb_date').text(get_month(fb_date.getMonth()) + " " + fb_date.getDate())
+    }
+</script>
