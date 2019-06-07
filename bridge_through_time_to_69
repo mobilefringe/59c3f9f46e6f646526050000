@@ -3,7 +3,7 @@
         <script id="banner_template" type="x-tmpl-mustache/text">
                 <div class="hero_banner special_event_banner" style="background-image: url({{image_url}})">
                     <h2 class="banner_header">{{name}}</h2>
-                    <div class="banner_text" id="welcome_msg_container"></div>
+                    <p>{{description}}</p>
                     <a href="#" class="time_btn animated_btn">Buy tickets</a>
                 </div>
         </script>
@@ -108,8 +108,8 @@
         init(e);
         function renderAll(){
             var banners = getRepoDetailsByName("Time to 69 Banner").images;
-            console.log(banners);
             var first_banner = banners[0];
+            console.log(banners);
             renderGeneral('#time_banner','#banner_template',banners);
             
             var property = [getPropertyDetails()];
