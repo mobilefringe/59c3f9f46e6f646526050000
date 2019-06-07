@@ -120,7 +120,7 @@
                 $('#mm_page_content').html(data.body);
                 var prop_details = getPropertyDetails();
                 renderAddress('#details_container', '#promo_template', prop_details);
-                console.log(prop_details)
+                console.log(prop_details, "prop")
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
