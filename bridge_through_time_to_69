@@ -108,7 +108,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var banners = getRepoDetailsByName("Time to 69 Banner");
+            var banners = getRepoDetailsByName("Time to 69 Banner").images;
             console.log(banners);
             var first_banner = banners[0];
             renderBanner('#banner_template','#time_banner',banners);
