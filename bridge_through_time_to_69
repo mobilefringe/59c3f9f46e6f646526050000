@@ -21,8 +21,8 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div id="updates_page_title"></div>
-                        <div id="desc"></div>
+                        <div id="about_page_title"></div>
+                        <div id="about_page_desc"></div>
                     </div>
                 </div>
             </div>
