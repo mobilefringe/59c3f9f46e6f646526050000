@@ -117,10 +117,10 @@
             var pages_json = prefix + "/pages/billings-a-bridge-through-time-to-69.json"
             $.getJSON(pages_json).done(function(data) {
                 const subpages = data.subpages;
-                // console.log(subpages);
-                subpages.map( (item) => {
-                     return $('#updates_page_title').html(item.title);
+                
+                subpages.map( item => {
                      console.log(item, "ll")
+                     return $('#updates_page_title').html(item.title);
                   });
                 $('#mm_page_title').html(item.title);
                 $('#mm_page_content').html(data.body);
