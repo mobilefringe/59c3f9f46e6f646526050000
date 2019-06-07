@@ -120,7 +120,7 @@
                 console.log(subpages[0].title)
                 $('#mm_page_title').html(subpages[0].title);
                 $('#mm_page_content').html(data.body);
-                // renderAddress('#details_container', '#promo_template', prop_details);
+                renderAddress('#details_container', '#promo_template', prop_details);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
