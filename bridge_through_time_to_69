@@ -118,10 +118,10 @@
             $.getJSON(pages_json).done(function(data) {
                 const subpages = data.subpages;
                 // console.log(subpages);
-                return subpages.map( item => {
+                subpages.map( (item) => {
                      return $('#updates_page_title').html(item.title);
                      console.log(item, "ll")
-                  })
+                  });
                 $('#mm_page_title').html(item.title);
                 $('#mm_page_content').html(data.body);
                 renderAddress('#details_container', '#promo_template', prop_details);
