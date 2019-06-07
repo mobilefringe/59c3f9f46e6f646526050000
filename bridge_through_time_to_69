@@ -112,15 +112,9 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/billings-a-bridge-through-time-to-69.json"
+            var pages_json = prefix + "/pages/billings-event-updates.json"
             $.getJSON(pages_json).done(function(data) {
-                const subpages = data.subpages;
-                $('#updates_page_title').html(subpages[2].title.toUpperCase());
-                
-                subpages.map( item => {
-                     console.log(item.title)
-                     return $('#updates_page_title').html(item.title);
-                  });
+            
                 // $('#mm_page_title').html(item.title);
                 // $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
