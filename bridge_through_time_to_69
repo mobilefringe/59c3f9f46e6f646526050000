@@ -13,7 +13,7 @@
 <div class="content_container main_container">
     <div class="row">
         <div class="col-md-12">
-            <div id="time_container">
+            <div id="details_container">
                 <script id="promos_template" type="x-tmpl-mustache/text">
                     <div class="row" data-cat="{{cat_list}}">
                         <div class="col-md-4">
@@ -43,9 +43,9 @@
                                 <img src="{{event_image_url_abs}}" alt="{{name}}" />
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="workshops_details">
                             <h2 class="promo_list_name">{{name}}</h2>
-                            <div class="promo_list_desc">{{description_short}}</div>
+                            <a href="#" class="time_btn animated_btn">Workshop Details</a>
                         </div>
                     </div>
                 </script>
