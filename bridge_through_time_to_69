@@ -119,7 +119,7 @@
                 const subpages = data.subpages;
             
                 subpages.map( item => {
-                     console.log(item[2].title)
+                     console.log(item[2])
                      return $('#updates_page_title').html(item.title);
                   });
                 // $('#mm_page_title').html(item.title);
