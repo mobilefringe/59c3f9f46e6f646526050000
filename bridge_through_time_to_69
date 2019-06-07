@@ -61,7 +61,7 @@
                 <script id="promos_template" type="x-tmpl-mustache/text">
                     <div class="row" data-cat="{{cat_list}}">
                         <div class="event_updates">
-                            <h2 class="special_event_name">{{name}}</h2>
+                            <h2 class="special_event_name">{{title}}</h2>
                             <p class="speacial_event_update_desc">{{description_long}}</p>
                             <p class="special_event_bold">{{description_short}}</p>
                         </div>
