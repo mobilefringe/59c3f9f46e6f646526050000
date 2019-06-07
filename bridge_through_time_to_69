@@ -120,7 +120,7 @@
             
                 subpages.map( item => {
                      console.log(item.title)
-                     return $('#updates_page_title').html(item.title);
+                     return $('#updates_page_title').html(item.title[2]);
                   });
                 // $('#mm_page_title').html(item.title);
                 // $('#mm_page_content').html(data.body);
