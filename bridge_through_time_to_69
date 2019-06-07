@@ -111,7 +111,6 @@
             var first_banner = banners[0];
             renderGeneral('#time_banner','#banner_template',banners);
             
-            
             var property = [getPropertyDetails()];
             renderGeneral('#welcome_msg_container','#welcome_msg_template',property);
             
