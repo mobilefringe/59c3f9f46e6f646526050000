@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <h2 class="speacial_event_name">{{name}}</h2>
+                            <div id="mm_page_title"></h2>
                             <div class="speacial_event_desc">{{description_short}}</div>
                         </div>
                     </div>
