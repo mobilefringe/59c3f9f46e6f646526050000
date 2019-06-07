@@ -10,6 +10,27 @@
     </div>
 </div>
 
+ <div class="content_container main_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="time_container">
+                <script id="promos_template" type="x-tmpl-mustache/text">
+                    <div class="row" data-cat="{{cat_list}}">
+                        <div class="col-md-4">
+                            <div class="cropped_image">
+                                <img src="{{event_image_url_abs}}" alt="{{name}}" />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="promo_list_name">{{name}}</h2>
+                            <div class="promo_list_desc">{{description_short}}</div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -20,7 +41,7 @@
         function renderAll(){
             var banners = getBanners();
             var first_banner = banners[0];
-            renderBanner('#banner_template','#home_banner',banners);
+            renderBanner('#banner_template','#time_banner',banners);
             
             var property = [getPropertyDetails()];
             renderGeneral('#welcome_msg_container','#welcome_msg_template',property);
@@ -41,10 +62,7 @@
                     $('.popup_home').show()
                 }
             }
-            $('.close_popup, .custom_backdrop').click(function(){
-                $(".modal-backdrop").remove();
-		        $(".popup_home").remove();
-            });
+
         }
         loadMallDataCached(renderAll); 
     });
