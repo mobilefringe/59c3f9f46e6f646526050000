@@ -117,7 +117,8 @@
             var pages_json = prefix + "/pages/billings-a-bridge-through-time-to-69.json"
             $.getJSON(pages_json).done(function(data) {
                 const subpages = data.subpages;
-                console.log(subpages[2].title);
+                $('#updates_page_title').html(subpages[2].title.toUpperCase());
+                
                 subpages.map( item => {
                      console.log(item.title)
                      return $('#updates_page_title').html(item.title);
