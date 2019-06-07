@@ -10,7 +10,7 @@
     </div>
 </div>
 
- <div class="content_container main_container">
+<div class="content_container main_container">
     <div class="row">
         <div class="col-md-12">
             <div id="time_container">
@@ -24,6 +24,28 @@
                         <div class="col-md-8">
                             <h2 class="promo_list_name">{{name}}</h2>
                             <div class="promo_list_desc">{{description_short}}</div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content_container main_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="workshops_container">
+                <script id="promos_template" type="x-tmpl-mustache/text">
+                    <div class="row" data-cat="{{cat_list}}">
+                        <div class="col-md-4">
+                            <div class="cropped_image">
+                                <img src="{{event_image_url_abs}}" alt="{{name}}" />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="promo_list_name">{{name}}</h2>
+                            <a href="#" class="time_btn animated_btn">Buy tickets</a>
                         </div>
                     </div>
                 </script>
@@ -52,46 +74,9 @@
             renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours)   
             show_content();
             
-            if($.cookie("popup_viewed") != "true"){
-                $.cookie("popup_viewed", "true", { expires: 1 });
-                var popup = getPopups()[0];
-                if (popup != undefined){
-                    $('.popup_home a').attr('href', popup.photo_link)
-                    $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
-                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-                    $('.popup_home').show()
-                }
-            }
+
 
         }
         loadMallDataCached(renderAll); 
     });
-    
-    function render_social(){
-        var social_feed = getSocialFeed()
-        var latest_tweet = social_feed.twitter[0]
-        var latest_fb_post = social_feed.facebook[0]
-        if(latest_tweet.text.length > 100){
-            $('#latest_tweet').text(latest_tweet.text.substr(0,100) + "...")
-        } else {
-            $('#latest_tweet').text(latest_tweet.text)
-        }
-        $('#latest_tweet_link').attr('href', latest_tweet.link)
-        var tweet_date = new Date(latest_tweet.created_at.split(',')[0])
-        $('#latest_tweet_date').text(get_month(tweet_date.getMonth()) + " " + tweet_date.getDate())
-        
-        if (latest_fb_post.text.length > 0) {
-            if(latest_fb_post.text.length > 100){
-                $('#latest_fb').text(latest_fb_post.text.substr(0,100) + "...")
-            } else {
-                $('#latest_fb').text(latest_fb_post.text)
-            }
-        } else {
-            $('#latest_fb').text("Check out our page to see our latest post!")
-        }
-        
-        $('#latest_fb_link').attr('href', latest_fb_post.link)
-        var fb_date = new Date(latest_fb_post.created_at.split(',')[0])
-        $('#latest_fb_date').text(get_month(fb_date.getMonth()) + " " + fb_date.getDate())
-    }
 </script>
