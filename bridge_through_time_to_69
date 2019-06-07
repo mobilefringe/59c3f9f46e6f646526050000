@@ -62,7 +62,6 @@
                     <div class="event_updates">
                         <h2 id="updates_page_title" class="special_event_name"></h2>
                         <p id="updates_page_desc" class="speacial_event_update_desc"></p>
-                        <p class="special_event_bold"></p>
                     </div>
                 </div>
             </div>
