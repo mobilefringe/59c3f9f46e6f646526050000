@@ -118,7 +118,7 @@
             $.getJSON(pages_json).done(function(data) {
                 const subpages = data.subpages;
                 // console.log(subpages);
-                subpages.map( item => {
+                return subpages.map( item => {
                      return $('#updates_page_title').html(item.title);
                      console.log(item, "ll")
                   })
