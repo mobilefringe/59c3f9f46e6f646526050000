@@ -114,7 +114,7 @@
             prefix = get_prefix();
             var pages_json = prefix + "/pages/billings-event-updates.json"
             $.getJSON(pages_json).done(function(data) {
-            console.log(data.description);
+            console.log(data.title);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
