@@ -121,6 +121,21 @@
                     $("#404_msg").fadeIn("fast");
                 }
             });
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix + "/pages/billings-about-us.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#updates_page_title').html(data.title.toUpperCase());
+                $('#updates_page_desc').html(data.body);
+    
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            });
+            
             show_content();
             
             if($.cookie("popup_viewed") != "true"){
