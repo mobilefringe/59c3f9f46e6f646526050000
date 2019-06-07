@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div id="mm_page_title"></div>
+                            <div class="banner_header" id="mm_page_title"></div>
                             <div id="mm_page_content"></div>
                         </div>
                     </div>
