@@ -116,7 +116,8 @@
             prefix = get_prefix();
             var pages_json = prefix + "/pages/billings-a-bridge-through-time-to-69.json"
             $.getJSON(pages_json).done(function(data) {
-                console.log(data.subpages);
+                const subpages = data.subpages;
+                console.log(subpages);
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
                 // renderAddress('#details_container', '#promo_template', prop_details);
