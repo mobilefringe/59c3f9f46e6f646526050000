@@ -119,7 +119,6 @@
                     $("#404_msg").fadeIn("fast");
                 }
             });
-            show_content();
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
