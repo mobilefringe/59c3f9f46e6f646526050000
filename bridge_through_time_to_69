@@ -110,7 +110,7 @@
             var banners = getRepoDetailsByName("Time to 69 Banner").images;
             var first_banner = banners[0];
             renderGeneral('#time_banner','#banner_template',banners);
-            
+
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
@@ -120,7 +120,8 @@
                 console.log(subpages);
                 subpages.map( item => {
                      return $('#updates_page_title').html(item.title);
-                })
+                     console.log(item, "ll")
+                  })
                 $('#mm_page_title').html(item.title);
                 $('#mm_page_content').html(data.body);
                 renderAddress('#details_container', '#promo_template', prop_details);
@@ -128,8 +129,7 @@
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
                 }
-            }); 
-            
+            });
             show_content();
             
             if($.cookie("popup_viewed") != "true"){
