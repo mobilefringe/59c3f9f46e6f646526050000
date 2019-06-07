@@ -22,8 +22,8 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="banner_header" id="mm_page_title"></div>
-                            <div id="mm_page_content"></div>
+                            <div id="updates_page_title" class="banner_header" id="mm_page_title"></div>
+                            <div id="desc"></div>
                         </div>
                     </div>
                 </script>
