@@ -109,7 +109,6 @@
         function renderAll(){
             var banners = getRepoDetailsByName("Time to 69 Banner").images;
             var first_banner = banners[0];
-            console.log(banners);
             renderGeneral('#time_banner','#banner_template',banners);
             
             var pathArray = window.location.pathname.split( '/' );
@@ -120,6 +119,7 @@
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
                 var prop_details = getPropertyDetails();
+                console.log(prop_details, "proop")
                 renderAddress('#address_container', '#address_template', prop_details);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
