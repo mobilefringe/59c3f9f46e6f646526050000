@@ -14,19 +14,17 @@
     <div class="row">
         <div class="col-md-12">
             <div id="details_container">
-                <script id="promos_template" type="x-tmpl-mustache/text">
-                    <div class="row" data-cat="{{cat_list}}">
-                        <div class="col-md-6">
-                            <div class="cropped_image">
-                                <img src="{{event_image_url_abs}}" alt="{{name}}" />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="updates_page_title"></div>
-                            <div id="desc"></div>
+                <div class="row" data-cat="{{cat_list}}">
+                    <div class="col-md-6">
+                        <div class="cropped_image">
+                            <img src="{{event_image_url_abs}}" alt="{{name}}" />
                         </div>
                     </div>
-                </script>
+                    <div class="col-md-6">
+                        <div id="updates_page_title"></div>
+                        <div id="desc"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
