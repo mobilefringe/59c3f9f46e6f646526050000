@@ -34,19 +34,17 @@
     <div class="row">
         <div class="col-md-12">
             <div id="workshops_container">
-                <script id="promos_template" type="x-tmpl-mustache/text">
-                    <div class="row" data-cat="{{cat_list}}">
-                        <div class="col-md-4">
-                            <div class="cropped_image">
-                                <img src="{{event_image_url_abs}}" alt="{{name}}" />
-                            </div>
-                        </div>
-                        <div class="workshops_details">
-                            <h2 class="speacial_event_name">{{name}}</h2>
-                            <a href="#" class="time_btn animated_btn">Workshop Details</a>
+                <div class="row" data-cat="{{cat_list}}">
+                    <div class="col-md-4">
+                        <div class="cropped_image">
+                            <img src="{{event_image_url_abs}}" alt="{{name}}" />
                         </div>
                     </div>
-                </script>
+                    <div class="workshops_details">
+                        <h2 class="speacial_event_name">{{name}}</h2>
+                        <a href="#" class="time_btn animated_btn">Workshop Details</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
