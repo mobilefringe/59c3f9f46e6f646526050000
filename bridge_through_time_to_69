@@ -61,7 +61,7 @@
                 <div class="row" data-cat="{{cat_list}}">
                     <div class="event_updates">
                         <h2 id="updates_page_title" class="special_event_name"></h2>
-                        <p id="updates_page_desc" class="speacial_event_update_desc"></p>
+                        <p id="updates_page_desc" class="updates_desc"></p>
                     </div>
                 </div>
             </div>
