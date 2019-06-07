@@ -122,7 +122,7 @@
             
             var pages_json = prefix + "/pages/billings-about-us.json"
             $.getJSON(pages_json).done(function(data) {
-                const image = data.image_file_name;
+                const image = data.image_url;
                 console.log(data);
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
