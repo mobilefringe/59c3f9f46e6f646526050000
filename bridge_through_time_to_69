@@ -1,7 +1,7 @@
 <div class="text-center">
     <div id="time_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
-                <div class="hero_banner" style="background-image: url({{image_url}})">
+                <div class="special_event_banner" style="background-image: url({{image_url}})">
                     <div class="banner_text" id="welcome_msg_container"></div>
                     <a href="#" class="time_btn animated_btn">Buy tickets</a>
                 </div>
@@ -22,8 +22,8 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <h2 class="promo_list_name">{{name}}</h2>
-                            <div class="promo_list_desc">{{description_short}}</div>
+                            <h2 class="speacial_event_name">{{name}}</h2>
+                            <div class="speacial_event_desc">{{description_short}}</div>
                         </div>
                     </div>
                 </script>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="workshops_details">
-                            <h2 class="promo_list_name">{{name}}</h2>
+                            <h2 class="speacial_event_name">{{name}}</h2>
                             <a href="#" class="time_btn animated_btn">Workshop Details</a>
                         </div>
                     </div>
@@ -54,8 +54,23 @@
     </div>
 </div>
 
-
-
+<div class="content_container main_container text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="updates_container">
+                <script id="promos_template" type="x-tmpl-mustache/text">
+                    <div class="row" data-cat="{{cat_list}}">
+                        <div class="event_updates">
+                            <h2 class="special_event_name">{{name}}</h2>
+                            <p class="speacial_event_update_desc">{{description_long}}</p>
+                            <p class="special_event_bold">{{name}}</p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     $(document).ready(function(e){
