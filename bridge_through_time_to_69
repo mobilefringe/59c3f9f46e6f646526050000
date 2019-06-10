@@ -14,17 +14,19 @@
     <div class="row">
         <div class="col-md-12">
             <div id="details_container">
-                <div class="row details_flex_container" data-cat="{{cat_list}}">
-                    <div class="col-md-6">
-                        <div class="cropped_image">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
+                <script id="event_details_template" type="x-tmpl-mustache/text">
+                    <div class="row details_flex_container" data-cat="{{cat_list}}">
+                        <div class="col-md-6">
+                            <div class="cropped_image">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 details_info_container">
+                            <div class="details_title" id="about_page_title"></div>
+                            <div class="details_info" id="about_page_desc"></div>
                         </div>
                     </div>
-                    <div class="col-md-6 details_info_container">
-                        <div class="details_title" id="about_page_title"></div>
-                        <div class="details_info" id="about_page_desc"></div>
-                    </div>
-                </div>
+                </script>
             </div>
         </div>
     </div>
