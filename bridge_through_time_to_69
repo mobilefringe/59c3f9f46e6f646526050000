@@ -13,7 +13,7 @@
 <div class="content_container main_container container_bottom_border">
 
 
-    <div id="details_container">
+
         <div class="row details_flex_container" data-cat="{{cat_list}}">
             <div class="col-md-6">
                 <div class="cropped_image">
@@ -25,7 +25,6 @@
                 <div class="details_info" id="about_page_desc"></div>
             </div>
         </div>
-    </div>
 
 
 </div>
