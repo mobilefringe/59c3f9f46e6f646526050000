@@ -162,6 +162,7 @@
             
             function renderGeneral(about_us_details_container, event_details_template, categories){
                 var item_list = [];
+                console.log(item_list);
                 var item_rendered = [];
                 var template_html = $(template).html();
                 Mustache.parse(template_html); 
