@@ -167,7 +167,7 @@
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
             console.log(data);
-            renderGeneral('#about_us_details_container','#about_us_details_template',container);
+            renderGeneral('#about_us_details_container','#about_us_details_template',data);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
