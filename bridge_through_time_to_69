@@ -17,8 +17,8 @@
                 <script id="about_us_details_template" type="x-tmpl-mustache/text">
                     <div class="row details_flex_container" data-cat="{{cat_list}}">
                         <div class="col-md-6">
-                            <div class="cropped_image about_page_img">
-                                <img src="{{image_url}}">
+                            <div class="cropped_image">
+                                <img id="about_page_img">
                             </div>
                         </div>
                         <div class="col-md-6 details_info_container">
