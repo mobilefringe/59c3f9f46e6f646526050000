@@ -54,8 +54,8 @@
                     <script id="workshop_template" type="x-tmpl-mustache/text">
                         <div class="row" data-cat="{{cat_list}}">
                             <div class="col-md-4 workshop_details_container">
-                                <div class="cropped_image hover_image">
-                                    <img src="{{image_url}}"
+                                <div class="cropped_image">
+                                    <img class="hover_image" src="{{image_url}}"
                                 </div>
                                 <div class="workshop_details">
                                     <h2 class="workshop_name">{{name}}</h2>
