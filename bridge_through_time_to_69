@@ -23,15 +23,13 @@
 </div>
 
 <div class="content_container main_container container_bottom_border">
-    <div id="details_container">
-        <div class="details_flex_container" data-cat="{{cat_list}}">
-            <div class="col-md-6 left_details_info_container">
-                <div class="details_title" id="concert_page_title"></div>
-                <div class="details_info" id="concert_page_desc"></div>
-            </div>
-            <div class="details_img_container">
-                <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
-            </div>
+    <div class="details_flex_container" data-cat="{{cat_list}}">
+        <div class="col-md-6 left_details_info_container">
+            <div class="details_title" id="concert_page_title"></div>
+            <div class="details_info" id="concert_page_desc"></div>
+        </div>
+        <div class="left_details_img_container">
+            <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
         </div>
     </div>
 </div>
