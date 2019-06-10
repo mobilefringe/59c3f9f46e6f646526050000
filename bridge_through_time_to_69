@@ -209,10 +209,10 @@
                         } 
                     },
                     success: function(data, textStatus, jqXHR) {
-                
+                    alert("success");
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
-                
+                    alert("fail");
                     }
                 }); 
     		});
