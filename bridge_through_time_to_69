@@ -13,7 +13,7 @@
 <div class="content_container main_container container_bottom_border">
     <div class="row details_flex_container" data-cat="{{cat_list}}">
         <div class="details_img_container">
-            <img src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
+            <img id="about_page_image" src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
         </div>
         <div class="details_info_container">
             <div class="details_title" id="about_page_title"></div>
@@ -140,6 +140,7 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
+                $('#about_page_image').html(data.image_url);
 
                 
             }).fail(function(jqXHR) {
