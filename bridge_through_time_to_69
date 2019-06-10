@@ -111,7 +111,7 @@
                     </div>
                     <div style="display:none">
                             <input name="subject" value="test" id="subject" type="text" placeholder="Subject" required>
-                        </div>
+                    </div>
                 </div>
             </form>
         </div>
