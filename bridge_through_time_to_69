@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="col-md-3 col-md-offset-2">
                         <label for="first_name"><p class="visibilityhidden">Your Full Name<span>*</span></p></label>
                         <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control" required />
                     </div>
