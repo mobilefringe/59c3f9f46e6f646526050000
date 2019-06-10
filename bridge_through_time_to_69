@@ -166,7 +166,7 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
-                $('#about_page_img').html(data.image_url);
+                $('.about_page_img').html(data.image_url);
             console.log(data.image_url);
             renderGeneral('#about_us_details_container','#about_us_details_template', data);
     
