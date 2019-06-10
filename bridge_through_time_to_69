@@ -169,7 +169,7 @@
     
                 console.log(data);
                 const test = data.image_url;
-                // renderGeneral('#about_us_details_container','#about_us_details_template', data);
+                renderGeneral('#about_us_details_container','#about_us_details_template', test);
                 
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
