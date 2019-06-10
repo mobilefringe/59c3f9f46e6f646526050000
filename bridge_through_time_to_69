@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 col-md-offset-2">
+                        <div class="col-md-3 col-md-offset-4">
                             <label for="first_name">Your Full Name<span>*</span></label>
                             <input name="feedback[full_name]" id="full_name" type="text" class="form-control" required />
                         </div>
