@@ -52,12 +52,10 @@
             <div id="workshops_container">
                 <script id="workshop_template" type="x-tmpl-mustache/text">
                     <div class="col-md-4 hover_container" >
-                        <div class="">
-                            <div class="cropped_image">
-                                <img src="{{image_url}}" />
-                            </div>
+                        <div class="cropped_image">
+                            <img src="{{image_url}}" />
                         </div>
-                        <div class="workshops_details">
+                        <div class="workshops_details middle">
                             <h2 class="speacial_event_name">{{name}}</h2>
                             <a href="#" class="time_btn">Workshop Details</a>
                         </div>
