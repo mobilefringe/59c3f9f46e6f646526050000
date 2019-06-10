@@ -12,7 +12,7 @@
 
 <div class="content_container main_container container_bottom_border">
     <div class="row">
-        <!--<div class="col-md-12">-->
+        <div class="col-md-12">
             <div id="about_us_details_container">
                 <div class="row details_flex_container" data-cat="{{cat_list}}">
                     <div class="">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-        <!--</div>-->
+        </div>
     </div>
 </div>
 
