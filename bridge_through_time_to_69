@@ -95,11 +95,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 col-md-offset-2">
-                            <label for="first_name">Your Full Name<span>*</span></label>
+                            <label for="first_name"><p class="visibilityhidden">Your Full Name<span>*</span></p></label>
                             <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control" required />
                         </div>
                         <div class="col-md-3">
-                            <label for="email">Email<span>*</span></label>
+                            <label for="email"><p class="visibilityhidden">Email<span>*</span</p></label>
                             <input name="feedback[email]" id="email" placeholder="Your Email*" type="email" class="form-control" required />
                         </div>
                         <div class="col-md-2">
