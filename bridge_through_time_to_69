@@ -18,7 +18,7 @@
                     <div class="row details_flex_container" data-cat="{{cat_list}}">
                         <div class="col-md-6">
                             <div class="cropped_image">
-                                <img id="about_page_img">
+                                <img id="about_page_img" src="{{image_url}}">
                             </div>
                         </div>
                         <div class="col-md-6 details_info_container">
