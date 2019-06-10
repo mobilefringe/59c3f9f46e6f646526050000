@@ -77,8 +77,8 @@
                 <script id="workshop_template" type="x-tmpl-mustache/text">
                     <div class="row" data-cat="{{cat_list}}">
                         <div class="col-md-4">
-                            <div class="cropped_image" style="background-image: url({{image_url}})">
-                            </div>
+                            // <div class="cropped_image" style="background-image: url({{image_url}})">
+                            // </div>
                         </div>
                         <div class="workshops_details">
                             <h2 class="speacial_event_name">{{name}}</h2>
