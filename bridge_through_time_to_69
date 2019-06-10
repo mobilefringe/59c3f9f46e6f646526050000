@@ -160,7 +160,7 @@
                 }
             });
             
-            function renderGeneral(about_us_details_container, event_details_template, collection){
+            function renderGeneral(about_us_details_container, event_details_template, categories){
                 var item_list = [];
                 var item_rendered = [];
                 var template_html = $(template).html();
