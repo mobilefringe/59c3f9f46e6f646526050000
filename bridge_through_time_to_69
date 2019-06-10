@@ -17,7 +17,7 @@
                 <script id="about_us_details_template" type="x-tmpl-mustache/text">
                     <div class="row details_flex_container" data-cat="{{cat_list}}">
                         <div class="col-md-6">
-                            <div class="cropped_image">
+                            <div class="cropped_image about_page_img">
                                 <img src="{{image_url}}">
                             </div>
                         </div>
@@ -165,6 +165,7 @@
             var pages_json = prefix + "/pages/billings-about-us.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#about_page_title').html(data.title.toUpperCase());
+                $('#about_page_desc').html(data.body);
                 $('#about_page_desc').html(data.body);
             console.log(data.image_url);
             renderGeneral('#about_us_details_container','#about_us_details_template', data);
