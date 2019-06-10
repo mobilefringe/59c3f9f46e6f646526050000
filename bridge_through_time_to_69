@@ -183,12 +183,7 @@
             });
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
-            console.log(workshopImages);
-            workshopImages.map(image => {
-                const shopImages = image;
-                console.log(shopImages)
-            });
-            renderGeneral('#workshops_container','#workshop_template',shopImages);
+            renderGeneral('#workshops_container','#workshop_template',workshopImages);
             
              var pages_json = prefix + "/pages/billings-event-details.json"
             $.getJSON(pages_json).done(function(data) {
