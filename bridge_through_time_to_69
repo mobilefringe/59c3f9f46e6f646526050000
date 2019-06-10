@@ -170,7 +170,7 @@
                 const image = data.image_url;
                 $('#event_details_page_title').html(data.title.toUpperCase());
                 $('#event_details_page_desc').html(data.body);
-                $('#event_page_image').attr('src', data.image_url);
+                $('#event_details_page_image').attr('src', data.image_url);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
