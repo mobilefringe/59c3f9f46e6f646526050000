@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="workshop_details">
                                     <h2 class="workshop_name">{{name}}</h2>
-                                    <a href="#" class="time_btn">Workshop Details</a>
+                                    <a href="#" class="workshop_btn">Workshop Details</a>
                                 </div>
                             </div>
                         </div>
