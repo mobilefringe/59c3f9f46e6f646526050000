@@ -80,41 +80,48 @@
     </div>
 </div>
 
-<div class="content_container main_container container_bottom_border">
-    <h2 class="contact_header mobile_padding text-center">Get in touch</h2>
-    <form id="contact_form">
-        <div class="row row-center">
-            <div class="col-md-8 col-md-offset-2">
-                <p>Send us a message and we will get back to you as soon as possible.</p>
-                <label for="message">Message<span>*</span></label>
-                <textarea name="feedback[comment]" id="message" class="form-control"></textarea>
-            </div>
+<div id="time_banner">
+    <script id="banner_template" type="x-tmpl-mustache/text">
+        <div class="content_container main_container container_bottom_border">
+            <h2 class="contact_header mobile_padding text-center">Get in touch</h2>
+            <form id="contact_form">
+                <div class="row row-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p>Send us a message and we will get back to you as soon as possible.</p>
+                        <label for="message">Message<span>*</span></label>
+                        <textarea name="feedback[comment]" id="message" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-2">
+                        <label for="first_name">Your Full Name<span>*</span></label>
+                        <input name="feedback[full_name]" id="full_name" type="text" class="form-control" required />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="email">Email<span>*</span></label>
+                        <input name="feedback[email]" id="email" type="email" class="form-control" required />
+                    </div>
+                    <div class="col-md-2">
+                        <div class="g-recaptcha" data-sitekey="6LfQuxQTAAAAAH2oW0qeTSs95tujK7FllF7Hjzt4"></div>
+                        <input type="submit" value="Send Message" class="read_more_btn" />
+                        <br /><br />
+                        <p id="success_subscribe" class="hidden_now">Thanks you for contacting us! We will get back to you as soon as we can.</p>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="row">
-            <div class="col-md-3 col-md-offset-2">
-                <label for="first_name">Your Full Name<span>*</span></label>
-                <input name="feedback[full_name]" id="full_name" type="text" class="form-control" required />
-            </div>
-            <div class="col-md-3">
-                <label for="email">Email<span>*</span></label>
-                <input name="feedback[email]" id="email" type="email" class="form-control" required />
-            </div>
-            <div class="col-md-2">
-                <div class="g-recaptcha" data-sitekey="6LfQuxQTAAAAAH2oW0qeTSs95tujK7FllF7Hjzt4"></div>
-                <input type="submit" value="Send Message" class="read_more_btn" />
-                <br /><br />
-                <p id="success_subscribe" class="hidden_now">Thanks you for contacting us! We will get back to you as soon as we can.</p>
-            </div>
-        </div>
-    </form>
-</div>
-
+    </script>
+</div>        
 <script>
     $(document).ready(function(e){
         init(e);
         function renderAll(){
             var banners = getRepoDetailsByName("Time to 69 Banner").images;
             var first_banner = banners[0];
+            renderGeneral('#time_banner','#banner_template',banners);
+            
+            var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
+            var main_banner = banners[0];
             renderGeneral('#time_banner','#banner_template',banners);
 
             var pathArray = window.location.pathname.split( '/' );
