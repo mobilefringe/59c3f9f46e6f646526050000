@@ -172,7 +172,6 @@
             var pages_json = prefix + "/pages/billings-concert.json"
             $.getJSON(pages_json).done(function(data) {
                 const image = data.image_url;
-                console.log(data);
                 $('#concert_page_title').html(data.title.toUpperCase());
                 $('#concert_page_desc').html(data.body);
     
