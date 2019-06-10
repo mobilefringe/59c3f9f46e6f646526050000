@@ -18,7 +18,7 @@
                     <div class="row details_flex_container" data-cat="{{cat_list}}">
                         <div class="col-md-6">
                             <div class="cropped_image">
-                                <img id="about_page_img">
+                                <img src="{{image_url}}"
                             </div>
                         </div>
                         <div class="col-md-6 details_info_container">
@@ -166,8 +166,7 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
-                
-            console.log(data)    
+            
             // renderGeneral('#about_us_details','#about_us_details_template',workshopImages);
     
             }).fail(function(jqXHR) {
