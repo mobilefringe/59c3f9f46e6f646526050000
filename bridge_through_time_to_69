@@ -17,7 +17,7 @@
                 <div class="row" data-cat="{{cat_list}}">
                     <div class="col-md-6">
                         <div class="cropped_image">
-                            <img src="{{image}}" />
+                            <img src="{{aboutImage}}" />
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -163,7 +163,7 @@
                 const image = data.image_url;
                 console.log(data);
                 const aboutImage = data.image_file_name;
-                console.log(aboutImage);
+            
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
     
