@@ -80,7 +80,7 @@
     </div>
 </div>
 
-<div class="hero_banner contact_banner" style="background-image: url({{image_url}})">
+<div class="hero_banner contact_banner" id="">
     <div id="contact_banner">
         <script id="contact_template" type="x-tmpl-mustache/text">
             <div class="content_container main_container form_flex">
@@ -180,9 +180,16 @@
                 }
             });
             
-            var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
-            var main_banner = banners[0];
-            renderGeneral('#contact_banner','#contact_template',formBanners);
+             var pages_json = prefix + "/pages/billings-contact-us.json"
+            $.getJSON(pages_json).done(function(data) {
+                const image = data.image_url;
+                $('#contact_page_image').css('background-image', 'url(' + data.image_url + ')');
+    
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            });
             
             show_content();
             
