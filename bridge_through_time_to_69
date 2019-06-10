@@ -168,7 +168,6 @@
                 $('#about_page_desc').html(data.body);
     
                 console.log(data);
-                const test.image_url = data;
                 renderGeneral('#about_us_details_container','#about_us_details_template', test);
                 
             }).fail(function(jqXHR) {
