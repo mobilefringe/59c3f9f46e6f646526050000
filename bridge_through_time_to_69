@@ -78,7 +78,7 @@
                     <div class="row" data-cat="{{cat_list}}">
                         <div class="col-md-4">
                             <div class="cropped_image">
-                                <img src="" alt="" />
+                                <img src="{{img_url}}" alt="" />
                             </div>
                         </div>
                         <div class="workshops_details">
