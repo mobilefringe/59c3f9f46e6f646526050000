@@ -80,7 +80,7 @@
     </div>
 </div>
 
-<div class="hero_banner contact_banner" id="">
+<div class="hero_banner contact_banner" id="contact_page_image">
     <div id="contact_banner">
         <script id="contact_template" type="x-tmpl-mustache/text">
             <div class="content_container main_container form_flex">
