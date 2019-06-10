@@ -48,23 +48,21 @@
 
 <div class="content_container main_container container_bottom_border">
     <div class="row">
-        <!--<div class="col-md-12">-->
-            <div id="workshops_container">
-                <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-4" >
-                        <div class="">
-                            <div class="cropped_image">
-                                <img src="{{image_url}}" />
-                            </div>
-                        </div>
-                        <div class="workshops_details">
-                            <h2 class="speacial_event_name">{{name}}</h2>
-                            <a href="#" class="time_btn">Workshop Details</a>
+        <div id="workshops_container">
+            <script id="workshop_template" type="x-tmpl-mustache/text">
+                <div class="col-md-4" >
+                    <div class="">
+                        <div class="cropped_image">
+                            <img src="{{image_url}}" />
                         </div>
                     </div>
-                </script>
-            </div>
-        <!--</div>-->
+                    <div class="workshops_details">
+                        <h2 class="speacial_event_name">{{name}}</h2>
+                        <a href="#" class="time_btn">Workshop Details</a>
+                    </div>
+                </div>
+            </script>
+        </div>
     </div>
 </div>
 
