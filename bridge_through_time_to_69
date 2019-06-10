@@ -51,7 +51,7 @@
         <div class="col-md-12">
             <div id="workshops_container">
                 <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="details_title" id="concert_page_title">Workshops</div>
+                    <div class="details_title">Workshops</div>
                         <div class="row" data-cat="{{cat_list}}">
                             <div class="col-md-4">
                                 <div class="cropped_image hover_image">
