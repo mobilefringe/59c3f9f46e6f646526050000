@@ -182,7 +182,7 @@
                 }
             });
             
-            const workshopImages = getRepoDetailsByName("Workshop Images").images.image_url;
+            const workshopImages = getRepoDetailsByName("Workshop Images").images;
             console.log(workshopImages)
             // renderGeneral('#time_banner','#banner_template',banners);
             
