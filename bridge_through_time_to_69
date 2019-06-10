@@ -178,16 +178,19 @@
                 }
             });
             
-             var pages_json = prefix + "/pages/billings-contact-us.json"
-            $.getJSON(pages_json).done(function(data) {
-                console.log(data, "what");
-                $('#contact_banner').css('background-image', 'url(' + image + ')');
+            const formBanner = getRepoDetailsByName("Time to 69 Form Banner").images;
+            console.log(forBanner, "yeså");
+            
+            //  var pages_json = prefix + "/pages/billings-contact-us.json"
+            // $.getJSON(pages_json).done(function(data) {
+            //     console.log(data, "what");
+            //     $('#contact_banner').css('background-image', 'url(' + image + ')');
     
-            }).fail(function(jqXHR) {
-                if (jqXHR.status == 404) {
-                    $("#404_msg").fadeIn("fast");
-                }
-            });
+            // }).fail(function(jqXHR) {
+            //     if (jqXHR.status == 404) {
+            //         $("#404_msg").fadeIn("fast");
+            //     }
+            // });
             
             show_content();
             
