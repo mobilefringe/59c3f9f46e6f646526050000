@@ -83,7 +83,7 @@
 <div class="hero_banner special_event_banner" style="background-image: url({{image_url}})"/>
     <div id="contact_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
-            <div class="content_container main_container container_bottom_border">
+            <div class="content_container main_container">
                 <h2 class="contact_header mobile_padding text-center">Get in touch</h2>
                 <form id="contact_form">
                     <div class="row row-center">
