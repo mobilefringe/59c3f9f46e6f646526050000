@@ -153,6 +153,9 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#updates_page_title').html(data.title.toUpperCase());
                 $('#updates_page_desc').html(data.body);
+                
+            conosole.log(data)    
+            renderGeneral('#about_container','#about_template',workshopImages);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
@@ -165,7 +168,6 @@
                 console.log(data);
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
-                $('#about_page_img').html(data.image_url);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
@@ -186,7 +188,6 @@
             });
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
-            console.log(workshopImages);
             renderGeneral('#workshops_container','#workshop_template',workshopImages);
             
              var pages_json = prefix + "/pages/billings-event-details.json"
