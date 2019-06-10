@@ -183,9 +183,9 @@
             });
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
-            // workshopImages.map(image => {
-            //     const shopImages = (image.image_url);
-            //     console.log(shopImages);
+            workshopImages.map(image => {
+                const shopImages = (image.image_url);
+                console.log(shopImages);
             })
             renderGeneral('#workshops_container','#workshop_template',workshopImages);
             
