@@ -166,8 +166,6 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
-            console.log(data);
-            
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
@@ -176,6 +174,8 @@
                 
                 renderGeneral('#about_us_details_container','#about_us_details_template', data);
             });
+            
+            console.log(data);
             
             var pages_json = prefix + "/pages/billings-concert.json"
             $.getJSON(pages_json).done(function(data) {
