@@ -162,6 +162,8 @@
             $.getJSON(pages_json).done(function(data) {
                 const image = data.image_url;
                 console.log(data);
+                const aboutImage = data.image_file_name;
+                console.log(aboutImage);
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
     
