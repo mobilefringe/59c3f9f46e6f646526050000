@@ -181,6 +181,7 @@
              var pages_json = prefix + "/pages/billings-contact-us.json"
             $.getJSON(pages_json).done(function(data) {
                 const image = data.image_url;
+                console.log(image);
                 $('#contact_banner').css('background-image', 'url(' + image + ')');
     
             }).fail(function(jqXHR) {
