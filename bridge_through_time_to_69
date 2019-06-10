@@ -47,21 +47,25 @@
 </div>
 
 <div class="content_container main_container container_bottom_border">
-    <div class="workshops_box">
-        <div class="details_title workshop-title text-center">Workshops</div>
-            <div id="workshops_container">
-                <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="workshop_details_container">
-                        <div class="workshop_image">
-                            <img class="hover_image" src="{{image_url}}"
+    <div class="row">
+        <div class="col-md-12 workshops_box">
+            <div class="details_title workshop-title text-center">Workshops</div>
+                <div id="workshops_container">
+                    <script id="workshop_template" type="x-tmpl-mustache/text">
+                        <div class="row" data-cat="{{cat_list}}">
+                            <div class="col-md-4 workshop_details_container">
+                                <div class="cropped_image">
+                                    <img class="hover_image" src="{{image_url}}"
+                                </div>
+                                <div class="workshop_details">
+                                    <h2 class="workshop_name">{{name}}</h2>
+                                    <a href="#" class="time_btn">Workshop Details</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="workshop_details">
-                            <h2 class="workshop_name">{{name}}</h2>
-                            <a href="#" class="workshop_btn">Workshop Details</a>
-                        </div>
-                    </div>
-                </script>
-            </div>
+                    </script>
+                </div>
+        </div>
     </div>
 </div>
 
