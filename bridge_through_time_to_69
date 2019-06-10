@@ -56,10 +56,10 @@
                             <div class="cropped_image hover_image">
                                 <img src="{{image_url}}"
                             </div>
-                        </div>
-                        <div class="workshop_details">
-                            <h2 class="speacial_event_name">{{name}}</h2>
-                            <a href="#" class="time_btn">Workshop Details</a>
+                            <div class="workshop_details">
+                                <h2 class="speacial_event_name">{{name}}</h2>
+                                <a href="#" class="time_btn">Workshop Details</a>
+                            </div>
                         </div>
                     </div>
                 </script>
