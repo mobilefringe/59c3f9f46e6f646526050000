@@ -17,7 +17,7 @@
                 <div class="row" data-cat="{{cat_list}}">
                     <div class="col-md-6">
                         <div class="cropped_image">
-                            <img src="{{aboutImage}}" />
+                            <img src=`${aboutImage}` />
                         </div>
                     </div>
                     <div class="col-md-6">
