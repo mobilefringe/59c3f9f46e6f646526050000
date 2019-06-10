@@ -96,11 +96,11 @@
                     <div class="row">
                         <div class="col-md-3 col-md-offset-2">
                             <label for="first_name">Your Full Name<span>*</span></label>
-                            <input name="feedback[full_name]" id="full_name" type="text" class="form-control" required />
+                            <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control" required />
                         </div>
                         <div class="col-md-3">
                             <label for="email">Email<span>*</span></label>
-                            <input name="feedback[email]" id="email" type="email" class="form-control" required />
+                            <input name="feedback[email]" id="email" placeholder="Your Email*" type="email" class="form-control" required />
                         </div>
                         <div class="col-md-2">
                             <div class="g-recaptcha" data-sitekey="6LfQuxQTAAAAAH2oW0qeTSs95tujK7FllF7Hjzt4"></div>
