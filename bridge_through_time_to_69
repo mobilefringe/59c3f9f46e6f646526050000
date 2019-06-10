@@ -159,20 +159,7 @@
                     $("#404_msg").fadeIn("fast");
                 }
             });
-            
-            function renderGeneral(#about_us_details_container, #event_details_template, collection){
-                var item_list = [];
-                console.log(item_list);
-                var item_rendered = [];
-                var template_html = $(template).html();
-                Mustache.parse(template_html); 
-                $.each( collection , function( key, val ) {
-                    var repo_rendered = Mustache.render(template_html,val);
-                    item_rendered.push(repo_rendered);
-                });
-                $(container).html(item_rendered.join(''));
-            }
-            
+        
             var pages_json = prefix + "/pages/billings-about-us.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#about_page_title').html(data.title.toUpperCase());
