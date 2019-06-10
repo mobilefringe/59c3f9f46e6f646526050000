@@ -162,6 +162,7 @@
         
             var pages_json = prefix + "/pages/billings-about-us.json"
             $.getJSON(pages_json).done(function(data) {
+                console.log(data);
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
     
