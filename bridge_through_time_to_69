@@ -52,7 +52,7 @@
             <div class="details_title workshop-title text-center">Workshops</div>
                 <div id="workshops_container">
                     <script id="workshop_template" type="x-tmpl-mustache/text">
-                        <div class="row workshop_flex" data-cat="{{cat_list}}">
+                        <div class="row" data-cat="{{cat_list}}">
                             <div class="col-md-4 workshop_details_container">
                                 <div class="cropped_image">
                                     <img class="hover_image" src="{{image_url}}"
