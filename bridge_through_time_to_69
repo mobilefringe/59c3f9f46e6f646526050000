@@ -189,7 +189,7 @@
                 const image = data.image_url;
                 console.log(data);
                 $('#event_details_page_title').html(data.title.toUpperCase());
-                $('#evant_details_page_desc').html(data.body);
+                $('#event_details_page_desc').html(data.body);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
