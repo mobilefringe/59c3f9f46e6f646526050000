@@ -17,7 +17,7 @@
                 <div class="row" data-cat="{{cat_list}}">
                     <div class="col-md-6">
                         <div class="cropped_image">
-                            <img src="`//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1559915646619/${aboutImage}`" class="" alt="">
+                            <img src="" class="" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -160,9 +160,9 @@
             
             var pages_json = prefix + "/pages/billings-about-us.json"
             $.getJSON(pages_json).done(function(data) {
-                const image = data.image_url;
-                console.log(data);
-                const aboutImage = data.image_file_name;
+                var aboutImage = getRepoDetailsByName("About Us");
+                consol.log(aboutImage);
+                renderGeneral('#time_banner','#banner_template',banners);
             
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
