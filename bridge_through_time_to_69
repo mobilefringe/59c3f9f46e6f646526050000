@@ -185,8 +185,8 @@
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
             console.log(workshopImages)
             workshopImages.map(image => {
-                const shopImages = images;
-                console.log(shopImages);
+                // const shopImages = images;
+                console.log(image);
             })
             renderGeneral('#workshops_container','#workshop_template',workshopImages);
             
