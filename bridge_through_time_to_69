@@ -100,9 +100,6 @@
                             <label for="first_name"><p class="visibilityhidden">Your Full Name<span>*</span></p></label>
                             <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control" required />
                         </div>
-                        <div style="display: none">
-                            <input name="subject" value="Bridge through time to 69" id="subject" type="text" placeholder="Subject" />
-                        </div>
                         <div class="col-md-3">
                             <label for="email"><p class="visibilityhidden">Email<span>*</span></p></label>
                             <input name="feedback[email]" id="email" placeholder="Your Email*" type="email" class="form-control" required />
@@ -112,6 +109,9 @@
                             <input type="submit" value="Send Message" class="read_more_btn" />
                             <br /><br />
                             <p id="success_subscribe" class="hidden_now">Thanks you for contacting us! We will get back to you as soon as we can.</p>
+                        </div>
+                        <div style="display: none">
+                            <input name="subject" value="Bridge through time to 69" id="subject" type="text" placeholder="Subject" />
                         </div>
                     </div>
                 </form>
