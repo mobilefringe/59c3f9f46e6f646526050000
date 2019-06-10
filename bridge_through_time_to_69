@@ -121,10 +121,6 @@
             var banners = getRepoDetailsByName("Time to 69 Banner").images;
             var first_banner = banners[0];
             renderGeneral('#time_banner','#banner_template',banners);
-            
-            var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
-            var main_banner = banners[0];
-            renderGeneral('#contact_banner','#banner_template',formBanners);
 
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
@@ -181,6 +177,10 @@
                     $("#404_msg").fadeIn("fast");
                 }
             });
+            
+            var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
+            var main_banner = banners[0];
+            renderGeneral('#contact_banner','#banner_template',formBanners);
             
             show_content();
             
