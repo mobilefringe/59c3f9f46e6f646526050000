@@ -35,7 +35,7 @@
         <div class="col-md-12">
             <div id="details_container">
                 <div class="row details_flex_container" data-cat="{{cat_list}}">
-                    <div class="col-md-6 left_details_info_container">
+                    <div class="col-md-6">
                         <div class="details_title" id="concert_page_title"></div>
                         <div class="details_info" id="concert_page_desc"></div>
                     </div>
