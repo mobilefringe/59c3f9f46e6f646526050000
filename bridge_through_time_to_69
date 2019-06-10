@@ -181,7 +181,8 @@
             const formBanner = getRepoDetailsByName("Time to 69 Form Banner").images;
             const firstBanner = formBanner[0].image_url;
             console.log(firstBanner)
-            $('#contact_banner').css('background-image', 'url(' + firstBanner + ')');
+            $('#contact_banner_form').css('background-image', 'url(' + firstBanner + ')');
+            // $('#contact_banner').css('background-image', 'url(' + firstBanner + ')');
             
             show_content();
             
