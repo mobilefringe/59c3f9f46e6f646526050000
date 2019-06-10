@@ -160,10 +160,6 @@
             
             var pages_json = prefix + "/pages/billings-about-us.json"
             $.getJSON(pages_json).done(function(data) {
-                var aboutImage = getRepoDetailsByName("About Us");
-                console.log(aboutImage);
-                renderGeneral('#time_banner','#banner_template',banners);
-            
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
     
