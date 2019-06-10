@@ -183,6 +183,7 @@
             });
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
+            console.log(workshopImages)
             // workshopImages.map(image => {
             //     const shopImages = (image.image_url);
             //     console.log(shopImages);
