@@ -17,7 +17,7 @@
                 <div class="row details_flex_container" data-cat="{{cat_list}}">
                     <div class="col-md-6">
                         <div class="cropped_image">
-                            <img id="about_page_img" src="//codecloud.cdn.speedyrails.net/sites/59c3f9f46e6f646526050000/image/jpeg/1560175874912/EventDetailsImage.jpg" class="" alt="">
+                            <img id="about_page_img">
                         </div>
                     </div>
                     <div class="col-md-6 details_info_container">
@@ -165,6 +165,7 @@
                 console.log(data);
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
+                $('#about_page_img').html(data.image_url);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
