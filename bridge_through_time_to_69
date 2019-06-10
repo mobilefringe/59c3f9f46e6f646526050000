@@ -172,10 +172,10 @@
                     $("#404_msg").fadeIn("fast");
                 }
                 
+                console.log(data);
                 renderGeneral('#about_us_details_container','#about_us_details_template', data);
             });
             
-            console.log(data);
             
             var pages_json = prefix + "/pages/billings-concert.json"
             $.getJSON(pages_json).done(function(data) {
