@@ -184,10 +184,10 @@
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
             console.log(workshopImages)
-            // workshopImages.map(image => {
-            //     const shopImages = (image.image_url);
-            //     console.log(shopImages);
-            // })
+            workshopImages.map(image => {
+                const shopImages = images;
+                console.log(shopImages);
+            })
             renderGeneral('#workshops_container','#workshop_template',workshopImages);
             
              var pages_json = prefix + "/pages/billings-event-details.json"
