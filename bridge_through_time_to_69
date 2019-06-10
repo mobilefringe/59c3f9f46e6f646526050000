@@ -185,7 +185,7 @@
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
             workshopImages.map(image => {
                 const shopImages = image;
-            })
+            });
             renderGeneral('#workshops_container','#workshop_template',shopImages);
             
              var pages_json = prefix + "/pages/billings-event-details.json"
