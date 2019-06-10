@@ -167,7 +167,7 @@
                 $('#about_page_title').html(data.title.toUpperCase());
                 $('#about_page_desc').html(data.body);
                 
-            conosole.log(data)    
+            console.log(data)    
             // renderGeneral('#about_us_details','#about_us_details_template',workshopImages);
     
             }).fail(function(jqXHR) {
