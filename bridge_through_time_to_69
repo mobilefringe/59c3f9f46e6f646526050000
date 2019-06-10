@@ -51,7 +51,7 @@
         <h2 class="details_title text-center">Workshops</h2>
             <div id="workshops_container">
                 <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-4" >
+                    <div class="col-md-4 hover_container" >
                         <div class="">
                             <div class="cropped_image">
                                 <img src="{{image_url}}" />
