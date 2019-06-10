@@ -180,7 +180,7 @@
             
             var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
             var main_banner = banners[0];
-            renderGeneral('#banner_template','#contact_banner',formBanners);
+            renderGeneral('#contact_banner','#banner_template',formBanners);
             
             show_content();
             
