@@ -179,7 +179,7 @@
             });
             
             var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
-            // var main_banner = banners[0];
+            var main_banner = banners[0];
             renderGeneral('#contact_banner','#banner_template',formBanners);
             
             show_content();
