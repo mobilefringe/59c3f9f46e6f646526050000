@@ -80,7 +80,7 @@
     </div>
 </div>
 
-<div class="hero_banner" style="background-image: url({{image_url}})"/>
+<div class="hero_banner" style="background-image: url({{image_url}})">
     <div id="contact_banner">
         <script id="contact_template" type="x-tmpl-mustache/text">
             <div class="content_container main_container">
