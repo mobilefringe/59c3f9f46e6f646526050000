@@ -53,7 +53,7 @@
                 <script id="workshop_template" type="x-tmpl-mustache/text">
                     <div class="col-md-4 workshop_details_container" >
                         <div class="cropped_image">
-                            <img src="{{image_url}}" />
+                            <img class="workshop_image" src="{{image_url}}" />
                         </div>
                         <div class="workshops_details middle">
                             <h2 class="workshop_name">{{name}}</h2>
