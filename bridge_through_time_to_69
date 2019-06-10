@@ -180,17 +180,7 @@
             
             const formBanner = getRepoDetailsByName("Time to 69 Form Banner").images;
             const firstBanner = formBanner[0].image_url;
-            
-            //  var pages_json = prefix + "/pages/billings-contact-us.json"
-            // $.getJSON(pages_json).done(function(data) {
-            //     console.log(data, "what");
-            //     $('#contact_banner').css('background-image', 'url(' + image + ')');
-    
-            // }).fail(function(jqXHR) {
-            //     if (jqXHR.status == 404) {
-            //         $("#404_msg").fadeIn("fast");
-            //     }
-            // });
+            $('#contact_banner').css('background-image', 'url(' + firstBanner + ')');
             
             show_content();
             
