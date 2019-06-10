@@ -122,6 +122,7 @@
             
             var formBanners = getRepoDetailsByName("Time to 69 Form Banner").images;
             var main_banner = banners[0];
+            console.log(formBanners, "foo")
             renderGeneral('#contact_banner','#banner_template',formBanners);
 
             var pathArray = window.location.pathname.split( '/' );
