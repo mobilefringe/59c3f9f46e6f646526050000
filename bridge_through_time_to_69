@@ -53,6 +53,26 @@
 <div class="content_container main_container">
     <div class="row">
         <div class="col-md-12">
+            <div id="details_container">
+                <div class="row" data-cat="{{cat_list}}">
+                    <div class="col-md-6">
+                        <div class="cropped_image">
+                            <img src="{{image}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="details_title" id="event_details_page_title"></div>
+                        <div class="details_desc" id="event_details_page_desc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content_container main_container">
+    <div class="row">
+        <div class="col-md-12">
             <div id="workshops_container">
                 <div class="row" data-cat="{{cat_list}}">
                     <div class="col-md-4">
@@ -157,6 +177,19 @@
                 console.log(data);
                 $('#concert_page_title').html(data.title.toUpperCase());
                 $('#concert_page_desc').html(data.body);
+    
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            });
+            
+             var pages_json = prefix + "/pages/billings-event-details.json"
+            $.getJSON(pages_json).done(function(data) {
+                const image = data.image_url;
+                console.log(data);
+                $('#event_details_page_title').html(data.title.toUpperCase());
+                $('#evant_details_page_desc').html(data.body);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
