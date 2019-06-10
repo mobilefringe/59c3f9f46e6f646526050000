@@ -56,7 +56,7 @@
                             <img src="{{image_url}}" />
                         </div>
                         <div class="workshops_details middle">
-                            <h2 class="speacial_event_name">{{name}}</h2>
+                            <h2 class="workshop_details_container">{{name}}</h2>
                             <a href="#" class="time_btn">Workshop Details</a>
                         </div>
                     </div>
