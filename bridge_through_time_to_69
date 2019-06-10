@@ -188,7 +188,7 @@
                 const shopImages = (image.photo_url);
                 console.log(shopImages);
             })
-            renderGeneral('#workshops_container','#workshop_template',test);
+            renderGeneral('#workshops_container','#workshop_template',shopImages);
             
              var pages_json = prefix + "/pages/billings-event-details.json"
             $.getJSON(pages_json).done(function(data) {
