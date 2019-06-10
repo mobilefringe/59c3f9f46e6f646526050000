@@ -181,7 +181,7 @@
                 }
             });
             
-            const workshopImages = getRepoDetailsByName("Workshop Images");
+            const workshopImages = getRepoDetailsByName("Workshop Images").images;
             console.log(workshopImages)
             // renderGeneral('#time_banner','#banner_template',banners);
             
