@@ -194,7 +194,6 @@
              var pages_json = prefix + "/pages/billings-event-details.json"
             $.getJSON(pages_json).done(function(data) {
                 const image = data.image_url;
-                console.log(data);
                 $('#event_details_page_title').html(data.title.toUpperCase());
                 $('#event_details_page_desc').html(data.body);
     
