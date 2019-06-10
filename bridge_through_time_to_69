@@ -49,7 +49,7 @@
 <div class="content_container main_container container_bottom_border">
     <div class="row">
         <div class="col-md-12 workshops_box">
-            <div class="details_title text-center">Workshops</div>
+            <div class="details_title workshop-title text-center">Workshops</div>
                 <div id="workshops_container">
                     <script id="workshop_template" type="x-tmpl-mustache/text">
                         <div class="row" data-cat="{{cat_list}}">
