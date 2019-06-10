@@ -168,7 +168,7 @@
                 $('#about_page_desc').html(data.body);
                 
             conosole.log(data)    
-            renderGeneral('#about_us_details','#about_us_details_template',workshopImages);
+            // renderGeneral('#about_us_details','#about_us_details_template',workshopImages);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
