@@ -100,6 +100,9 @@
                             <label for="first_name"><p class="visibilityhidden">Your Full Name<span>*</span></p></label>
                             <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control" required />
                         </div>
+                        <div>
+                            <input name="subject" value="Bridge through time to 69" id="subject" type="text" placeholder="Subject" />
+                        </div>
                         <div class="col-md-3">
                             <label for="email"><p class="visibilityhidden">Email<span>*</span></p></label>
                             <input name="feedback[email]" id="email" placeholder="Your Email*" type="email" class="form-control" required />
