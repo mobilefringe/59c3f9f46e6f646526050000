@@ -22,8 +22,8 @@
     </div>
 </div>
 
-<div class="content_container main_container container_bottom_border left_column_reverse">
-    <div class="details_flex_container">
+<div class="content_container main_container container_bottom_border">
+    <div class="details_flex_container left_column_reverse">
         <div class="left_details_info_container">
             <div class="details_title" id="concert_page_title"></div>
             <div class="details_info" id="concert_page_desc"></div>
