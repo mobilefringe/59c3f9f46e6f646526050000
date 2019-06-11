@@ -4,7 +4,7 @@
                 <div class="hero_banner special_event_banner" style="background-image: url({{image_url}})">
                     <h2 class="banner_header">{{name}}</h2>
                     <p>{{description}}</p>
-                    <a href="#workshops_container" class="time_btn animated_btn">Buy tickets</a>
+                    <a href="#buyTickets" class="time_btn animated_btn">Buy tickets</a>
                 </div>
         </script>
     </div>
@@ -46,22 +46,24 @@
     </div>
 </div>
 
-<div class="content_container main_container container_bottom_border">
-    <div class="row workshops_spacing">
-        <h2 class="details_title text-center">Workshops</h2>
-            <div id="workshops_container">
-                <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-4 workshop_details_container" >
-                        <div class="cropped_image">
-                            <img class="workshop_image" src="{{image_url}}" />
+<div id="buyTickets">
+    <div class="content_container main_container container_bottom_border">
+        <div class="row workshops_spacing">
+            <h2 class="details_title text-center">Workshops</h2>
+                <div id="workshops_container">
+                    <script id="workshop_template" type="x-tmpl-mustache/text">
+                        <div class="col-md-4 workshop_details_container" >
+                            <div class="cropped_image">
+                                <img class="workshop_image" src="{{image_url}}" />
+                            </div>
+                            <div class="workshops_details middle">
+                                <h2 class="workshop_name">{{name}}</h2>
+                                <a href="#" class="workshop_btn">Workshop Details</a>
+                            </div>
                         </div>
-                        <div class="workshops_details middle">
-                            <h2 class="workshop_name">{{name}}</h2>
-                            <a href="#" class="workshop_btn">Workshop Details</a>
-                        </div>
-                    </div>
-                </script>
-            </div>
+                    </script>
+                </div>
+        </div>
     </div>
 </div>
 
