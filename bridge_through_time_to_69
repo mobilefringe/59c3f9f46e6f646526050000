@@ -203,7 +203,7 @@
                     alert("Thank you for contacting us. A member from our team will contact you shortly.");
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
-                    alert("Error: Your message was unable to send");
+                    alert("Error: There was an error when trying to submit your request. Please ensure you have entered a valid email address and please try again");
                     }
                 }); 
     		});
