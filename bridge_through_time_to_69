@@ -56,7 +56,7 @@
         <h2 class="details_title workshop_title text-center">Workshops</h2>
             <div id="workshops_container">
                 <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-4 workshop_details_container" >
+                    <div class="col-md-4 col-sm-6 workshop_details_container" >
                         <div class="cropped_image">
                             <img class="workshop_image" alt="{{name}}" src="{{image_url}}" />
                         </div>
