@@ -125,6 +125,11 @@
 		        $(".popup_home").remove();
             });
         }
+        
+        $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
         loadMallDataCached(renderAll); 
     });
     
