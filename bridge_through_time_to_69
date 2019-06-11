@@ -95,15 +95,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-md-offset-2">
+                    <div class="col-md-3 nopadding col-md-offset-2">
                         <label for="first_name"><p class="visibilityhidden">Your Full Name<span>*</span></p></label>
                         <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control contact_form_control" required />
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 nopadding">
                         <label for="email"><p class="visibilityhidden">Email<span>*</span></p></label>
                         <input name="feedback[email]" id="email" placeholder="Your Email*" type="email" class="form-control contact_form_control" required />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 nopadding">
                         <div class="g-recaptcha" data-sitekey="6LfQuxQTAAAAAH2oW0qeTSs95tujK7FllF7Hjzt4"></div>
                         <input type="submit" value="Send Message" class="contact_btn" />
                         <br /><br />
