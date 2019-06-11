@@ -227,6 +227,11 @@
                 }); 
     		});
         }
+        
+        $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
         loadMallDataCached(renderAll); 
     });
 </script>
