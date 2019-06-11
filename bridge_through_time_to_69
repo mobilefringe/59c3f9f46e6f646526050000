@@ -226,6 +226,7 @@
                     }
                 }); 
     		});
+    		
     		$('.flexslider').flexslider({
                 animation: "slide",
             });
