@@ -108,6 +108,8 @@
                         <input type="submit" value="Send Message" class="contact_btn" />
                         <br /><br />
                     </div>
+                </div>
+                <div class="row">
                     <div id="send_contact_success" class="alert alert-success hidden_now col-md-8 col-md-offset-2" role="alert">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
