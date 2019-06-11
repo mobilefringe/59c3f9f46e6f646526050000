@@ -209,10 +209,14 @@
                         } 
                     },
                     success: function(data, textStatus, jqXHR) {
-                    alert("Thank you for contacting us. A member from our team will contact you shortly.");
+                        $('html, body').animate({scrollTop : 0}, 800);
+                        $('#send_contact_success').fadeIn();
+                        $('#contact_form').find("input[type=text], textarea").val("");
+                        
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
-                    alert("Error: There was an error when trying to submit your request. Please ensure you have entered a valid email address and please try again");
+                        $('html, body').animate({scrollTop : 0},800);
+                        $('#send_contact_error').fadeIn();
                     }
                 }); 
     		});
