@@ -200,10 +200,10 @@
                         } 
                     },
                     success: function(data, textStatus, jqXHR) {
-                    alert("success");
+                    alert("Thank you for contacting us. A member from our team will contact you shortly.");
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
-                    alert("fail");
+                    alert("Error: Your message was unable to send");
                     }
                 }); 
     		});
