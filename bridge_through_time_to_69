@@ -167,6 +167,7 @@
                 $('#concert_page_title').html(data.title.toUpperCase());
                 $('#concert_page_desc').html(data.body);
                 $('#concert_page_image').attr('src', data.image_url);
+                $('#concert_page_image').attr('alt', data.title);
     
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
