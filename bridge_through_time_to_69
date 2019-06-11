@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3 no_padding col-md-offset-2">
+                    <div class="col-sm-3 no_padding col-sm-offset-2">
                         <label for="full_name"><p class="visibilityhidden">Your Full Name<span>*</span></p></label>
                         <input name="feedback[full_name]" id="full_name" placeholder="Your Full Name" type="text" class="form-control contact_form_control" required />
                     </div>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-8 col-md-offset-2">
+                    <div class="col-sm-8 col-sm-offset-2">
                         <div id="send_contact_success" class="alert alert-success hidden_now" role="alert">
                             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                             <span class="sr-only">Success</span>
