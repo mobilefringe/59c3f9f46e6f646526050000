@@ -4,7 +4,7 @@
                 <div class="hero_banner special_event_banner" style="background-image: url({{image_url}})">
                     <h2 class="banner_header">{{name}}</h2>
                     <p>{{description}}</p>
-                    <a href="#" class="time_btn animated_btn">Buy tickets</a>
+                    <a href="#workshops_container" class="time_btn animated_btn">Buy tickets</a>
                 </div>
         </script>
     </div>
