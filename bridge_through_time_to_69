@@ -209,13 +209,11 @@
                         } 
                     },
                     success: function(data, textStatus, jqXHR) {
-                        // $('html, body').animate({scrollTop : 0}, 800);
                         $('#send_contact_success').fadeIn();
                         $('#contact_form').find("input[type=text], textarea").val("");
                         
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
-                        $('html, body').animate({scrollTop : 0},800);
                         $('#send_contact_error').fadeIn();
                     }
                 }); 
