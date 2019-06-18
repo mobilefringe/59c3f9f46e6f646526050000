@@ -62,7 +62,7 @@
                         </div>
                         <div class="workshops_details middle">
                             <h2 class="workshop_name">{{name}}</h2>
-                            <a href="{{url}}" class="workshop_btn">Workshop Details</a>
+                            <a href="{{url}}" target="_blank" class="workshop_btn">Workshop Details</a>
                         </div>
                     </div>
                 </script>
