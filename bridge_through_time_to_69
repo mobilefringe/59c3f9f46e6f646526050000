@@ -183,7 +183,7 @@
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
             console.log("workshopImages", workshopImages)
-            const sortedWorkshopImages = _.sortBy(workshopImages, [function(o) { return o.updated_at; }]);
+            const sortedWorkshopImages = _.sortBy(workshopImages, [function(o) { return o.id; }]);
             renderGeneral('#workshops_container','#workshop_template', sortedWorkshopImages);
             
              var pages_json = prefix + "/pages/billings-event-details.json"
