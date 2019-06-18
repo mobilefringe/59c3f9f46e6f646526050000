@@ -54,19 +54,19 @@
 <div class="content_container main_container container_bottom_border">
     <div class="workshops_spacing">
         <h2 class="details_title workshop_title text-center">Workshops</h2>
-            <div class="row" id="workshops_container">
-                <script id="workshop_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-4 col-sm-6 workshop_details_container" >
-                        <div class="cropped_image">
-                            <img class="workshop_image" alt="{{name}}" src="{{image_url}}" />
-                        </div>
-                        <div class="workshops_details middle">
-                            <h2 class="workshop_name">{{name}}</h2>
-                            <a href="{{url}}" target="_blank" class="workshop_btn">Workshop Details</a>
-                        </div>
+        <div class="row" id="workshops_container">
+            <script id="workshop_template" type="x-tmpl-mustache/text">
+                <div class="col-md-4 col-sm-6 workshop_details_container" >
+                    <div class="cropped_image">
+                        <img class="workshop_image" alt="{{name}}" src="{{image_url}}" />
                     </div>
-                </script>
-            </div>
+                    <div class="workshops_details middle">
+                        <h2 class="workshop_name">{{name}}</h2>
+                        <a href="{{url}}" target="_blank" class="workshop_btn">Workshop Details</a>
+                    </div>
+                </div>
+            </script>
+        </div>
     </div>
 </div>
 
@@ -74,12 +74,10 @@
     <div class="row">
         <div class="col-md-12 event_updates_container">
             <div id="updates_container">
-                <!--<div class="row" data-cat="{{cat_list}}">-->
-                    <div class="event_updates">
-                        <h2 id="updates_page_title" class="special_event_name"></h2>
-                        <p id="updates_page_desc" class="updates_desc"></p>
-                    </div>
-                <!--</div>-->
+                <div class="event_updates">
+                    <h2 id="updates_page_title" class="special_event_name"></h2>
+                    <p id="updates_page_desc" class="updates_desc"></p>
+                </div>
             </div>
         </div>
     </div>
