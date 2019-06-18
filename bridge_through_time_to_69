@@ -182,7 +182,6 @@
             });
             
             const workshopImages = getRepoDetailsByName("Workshop Images").images;
-            console.log("workshopImages", workshopImages)
             const sortedWorkshopImages = _.sortBy(workshopImages, [function(o) { return o.id; }]);
             renderGeneral('#workshops_container','#workshop_template', sortedWorkshopImages);
             
