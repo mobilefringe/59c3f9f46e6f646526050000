@@ -88,7 +88,9 @@
             <script id="sponsors_template" type="x-tmpl-mustache/text">
                 <div class="col-md-4 col-sm-6 workshop_details_container" >
                     <div class="cropped_image">
-                        <img class="workshop_image" alt="{{name}}" src="{{image_url}}" />
+                        <a href="{{url}}" target="_blank">
+                            <img class="workshop_image" alt="{{name}}" src="{{image_url}}" />
+                        </a>
                     </div>
                 </div>
             </script>
