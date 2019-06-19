@@ -86,7 +86,7 @@
         <h2 class="details_title workshop_title text-center">Sponsors</h2>
         <div class="row" id="sponsors_container">
             <script id="sponsors_template" type="x-tmpl-mustache/text">
-                <div class="col-md-4 col-sm-6 workshop_details_container" >
+                <div class="col-md-4 col-sm-6">
                     <div class="cropped_image">
                         {{#url}}
                         <a href="{{url}}" target="_blank">
