@@ -56,14 +56,13 @@
             <script id="workshop_template" type="x-tmpl-mustache/text">
                 <div class="col-md-12 workshop_details_container">
                     <div class="">
-                        <div class="">
-                            <h2 class="workshop_name">{{name}}</h2>
-                            
-                        </div>
-                        <div>
-                            <a href="{{url}}" target="_blank" class="workshop_btn">Workshop Details</a>
-                        </div>
+                        <h2 class="workshop_name">{{name}}</h2>
+                        
                     </div>
+                    <div>
+                        <a href="{{url}}" target="_blank" class="workshop_btn">Workshop Details</a>
+                    </div>
+        
                 </div>
             </script>
         </div>
