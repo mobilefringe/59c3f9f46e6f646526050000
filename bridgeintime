@@ -54,10 +54,7 @@
         <h2 class="details_title workshop_title text-center">Workshops</h2>
         <div class="row" id="workshops_container">
             <script id="workshop_template" type="x-tmpl-mustache/text">
-                <div class="col-md-4 col-sm-6 workshop_details_container" >
-                    <div class="cropped_image">
-                        <img class="workshop_image" alt="{{name}}" src="{{image_url}}" />
-                    </div>
+                <div class="col-md-12 workshop_details_container" >
                     <div class="workshops_details middle">
                         <h2 class="workshop_name">{{name}}</h2>
                         <a href="{{url}}" target="_blank" class="workshop_btn">Workshop Details</a>
