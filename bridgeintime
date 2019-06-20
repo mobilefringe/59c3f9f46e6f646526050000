@@ -116,7 +116,7 @@
                         {{#url}}
                         <a href="{{url}}" target="_blank">
                         {{/url}}
-                            <img class="sponsor_image" alt="{{name}}" src="{{image_url}}" />
+                            <img class="sponsor_img" alt="{{name}}" src="{{image_url}}" />
                         </a>
                     </div>
                 </div>
