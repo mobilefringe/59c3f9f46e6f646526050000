@@ -147,9 +147,11 @@
         
             show_content();
             $('#iFrame1').css('display','block')
-            // setTimeout(function(){
-                
-            // }, 3000)
+            setTimeout(function(){
+                let frame = document.getElementById('iFrame1');
+                    frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
+                    console.log('select-store',store_details)
+            }, 3000)
             
             // MAP
             // var stores = getStoresList();
