@@ -150,7 +150,7 @@
             setTimeout(function(){
                 let frame = document.getElementById('iFrame1');
                 frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
-                console.log('select-store')
+                console.log('select-store',store_details)
             }, 500)
             
             // MAP
