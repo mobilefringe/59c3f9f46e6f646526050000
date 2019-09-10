@@ -171,7 +171,7 @@
     })
     window.addEventListener('message', event => {
         // IMPORTANT: check the origin of the data! 
-        if (event.origin.startsWith('https://mf-map.netlify.com')) { 
+        if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "store-details-clicked") { 
             // The data was sent from your site.
             // Data sent with postMessage is stored in event.data:
             if(event.data && event.data.selectedStore) {
