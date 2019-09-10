@@ -146,7 +146,7 @@
             }
         
             show_content();
-            
+            $('#iFrame1').css('display','block')
             // setTimeout(function(){
                 
             // }, 3000)
