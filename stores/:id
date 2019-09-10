@@ -146,7 +146,7 @@
             }
             
             let frame = document.getElementById('iFrame1');
-            console.log('frame', frame)
+            console.log('frame', frame.contentWindow)
             frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
         
             show_content();
