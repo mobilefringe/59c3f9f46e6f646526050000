@@ -79,5 +79,11 @@
         height: calc(100vh - 101px) !important;
         top: 101px !important;
     }
-    
+    @media (min-width: 768px) {
+        html, iframe{
+            scroll-behavior: smooth;
+            height: calc(100vh - 101px) !important;
+            top: 101px !important;
+        }
+    }
 </style>
