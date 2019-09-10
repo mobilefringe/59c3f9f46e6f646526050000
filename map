@@ -59,8 +59,43 @@
             }
         }
         loadMallDataCached(renderPageData);
-        
-       
+        window.addEventListener('message', function (e) {
+            // message passed can be accessed in "data" attribute of the event object
+            var scroll_height = e.data;
+    
+            document.getElementById('iFrame1').style.height = scroll_height + 'px';
+        }, false);
+        window.addEventListener('message', function (event) {
+            if (event.data == 'ready') {
+                sendHash()
+            }
+    
+            if (anchor = event.data['setAnchor']) {
+                window.location.href = anchor
+            }
+    
+            if (offset = event.data['offset']) {
+                console.log("scroll in offset iframe", $('#iFrame1').offset().top, "offset", offset)
+                window.scrollTo(0, $('#iFrame1').offset().top + offset - 100)
+            }
+        })
+    
+        sendHash = function () {
+            hash = window.location.hash.substring(1)
+            $('#iFrame1')[0].contentWindow.postMessage({
+                "findElement": hash
+            }, '*');
+            console.log("hash", hash)
+        }
+    
+        $(window).on('hashchange', sendHash);
+        // window.addEventListener('message', function (event) {
+        //     if (offset = event.data['offset']) {
+        //         console.log("scroll in message iframe", $('#iFrame1').offset().top, "offset", offset)
+        //         window.scrollTo(0, $('#iFrame1').offset().top + offset - 300)
+        //     }
+        // })
+        });
         window.addEventListener('message', event => {
             console.log('event', event)
             // IMPORTANT: check the origin of the data! 
@@ -70,7 +105,7 @@
                 if(event.data && event.data.selectedStore) {
                     var store = event.data.selectedStore
                     console.log(store); 
-                    window.location.href= "/stores/"+store.slug;
+                    window.location.href= "/stores/"+store.slug
                 }
             } else {
                 // The data was NOT sent from your site! 
@@ -79,7 +114,6 @@
                 return; 
             } 
         }); 
-    }); 
 </script>
 <style>
     html, iframe{
