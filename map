@@ -105,7 +105,7 @@
                 if(event.data && event.data.selectedStore) {
                     var store = event.data.selectedStore
                     console.log(store); 
-                    window.location.href= "/stores/"+store.slug
+                    window.location.href= "/stores/"+store.slug;
                 }
             } else {
                 // The data was NOT sent from your site! 
