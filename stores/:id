@@ -223,6 +223,9 @@
         height: calc(100% - 101px) !important;
         top: 101px !important;
     }
+    #iFrame1 {
+        display: none;
+    }
     /*@media (max-width: 768px) {*/
     /*    html, iframe{*/
     /*        height: calc(100vh - 80px) !important;*/
