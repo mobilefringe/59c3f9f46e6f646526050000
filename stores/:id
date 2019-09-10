@@ -193,3 +193,18 @@
         }
     }
 </script>
+<style>
+    html, iframe{
+        scroll-behavior: smooth;
+        height: calc(100vh - 101px) !important;
+        top: 101px !important;
+    }
+    @media (max-width: 768px) {
+        html, iframe{
+            height: calc(100vh - 80px) !important;
+        }
+        .home_hours_phone {
+            display:none!important;
+        }
+    }
+</style>
