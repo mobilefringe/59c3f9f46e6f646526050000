@@ -83,7 +83,7 @@
             height: calc(100vh - 80px) !important;
         }
         .show_phone.home_hours_phone {
-            display:none;
+            display:none!important;
         }
     }
 </style>
