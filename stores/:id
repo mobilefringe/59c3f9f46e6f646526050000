@@ -147,9 +147,9 @@
         
             show_content();
             
-            setTimeout(function(){
+            // setTimeout(function(){
                 
-            }, 3000)
+            // }, 3000)
             
             // MAP
             // var stores = getStoresList();
