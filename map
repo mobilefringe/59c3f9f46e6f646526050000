@@ -60,7 +60,7 @@
         }
         loadMallDataCached(renderPageData);
         
-        });
+    });
         window.addEventListener('message', event => {
             console.log('event', event)
             // IMPORTANT: check the origin of the data! 
