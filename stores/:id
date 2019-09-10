@@ -145,8 +145,10 @@
                 $('#job_anchor').hide()
             }
             
-            let frame = document.getElementById('iFrame1');
-            frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
+            setTimeout(function(){
+                let frame = document.getElementById('iFrame1');
+                frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
+            }, 500)
         
             show_content();
             
