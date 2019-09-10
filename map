@@ -78,7 +78,7 @@
         height: calc(100vh - 101px) !important;
         top: 101px !important;
     }
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         html, iframe{
             height: calc(100vh - 80px) !important;
         }
