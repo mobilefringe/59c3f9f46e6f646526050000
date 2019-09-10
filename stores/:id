@@ -179,9 +179,11 @@
                 window.location.href= "/stores/"+store.slug
             }
         } else if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "map-loaded") { 
-            if(event.data && event.data.selectedStore) {
-                var store = event.data.selectedStore
-                window.location.href= "/stores/"+store.slug
+            if(event.data && event.data.loading) {
+                var loading = event.data.loading
+                if (!loading){
+                    
+                }
             }
         }
     }); 
