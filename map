@@ -79,6 +79,7 @@
                 return; 
             } 
         }); 
+    }); 
 </script>
 <style>
     html, iframe{
