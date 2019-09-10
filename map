@@ -102,7 +102,10 @@
             if (event.origin.startsWith('https://mf-map.netlify.com')) { 
                 // The data was sent from your site.
                 // Data sent with postMessage is stored in event.data:
-                console.log(event.data); 
+                if(event.data && event.data.selectedStore) {
+                    var store = event.data.selectedStore
+                    console.log(store); 
+                }
             } else {
                 // The data was NOT sent from your site! 
                 // Be careful! Do not use it. This else branch is
