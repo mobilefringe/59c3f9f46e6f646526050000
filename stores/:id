@@ -165,7 +165,7 @@
     })
     
     function load_map(reg, store_details){
-        let frame = document.getElementById('your-frame-id');
+        let frame = document.getElementById('iFrame1');
         frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
         this_region = {};
         if(store_details.svgmap_region){
