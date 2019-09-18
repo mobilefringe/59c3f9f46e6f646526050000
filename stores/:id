@@ -147,11 +147,11 @@
         
             show_content();
             $('#iFrame1').css('display','block')
-            setTimeout(function(){
-                let frame = document.getElementById('iFrame1');
-                frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
-                console.log('select-store',store_details)
-            }, 3000)
+            // setTimeout(function(){
+            //     let frame = document.getElementById('iFrame1');
+            //     frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
+            //     console.log('select-store',store_details)
+            // }, 3000)
             
             // MAP
             // var stores = getStoresList();
@@ -170,8 +170,6 @@
 		loadMallDataCached(renderAll); 
     })
     window.addEventListener('message', event => {
-        console.log('event.data.event', event)
-        console.log('event.origin',event.origin , 'event.data.event', event.data.event, (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "map-loaded"))
         // IMPORTANT: check the origin of the data! 
         if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "store-details-clicked") { 
             // The data was sent from your site.
@@ -185,7 +183,9 @@
             if(event.data && event.data.loading) {
                 var loading = event.data.loading
                 if (!loading){
-                    
+                    let frame = document.getElementById('iFrame1');
+                    frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
+                    console.log('select-store',store_details)
                 }
             }
         }
