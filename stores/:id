@@ -182,6 +182,7 @@
             console.log('event.data.loading', event.data.loading)
             if(event.data && event.data.loading) {
                 var loading = event.data.loading
+                console.log('loadingloading', loading)
                 if (!loading){
                     let frame = document.getElementById('iFrame1');
                     frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
