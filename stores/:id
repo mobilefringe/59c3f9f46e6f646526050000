@@ -180,7 +180,7 @@
             }
         } else if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "map-loaded") { 
             console.log('event.data.loading', event.data.loading)
-            if(event.data && event.data.loading) {
+            if(event.data) {
                 var loading = event.data.loading
                 console.log('loadingloading', loading)
                 if (!loading){
