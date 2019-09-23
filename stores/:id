@@ -148,25 +148,6 @@
         
             show_content();
             $('#iFrame1').css('display','block')
-            // setTimeout(function(){
-            //     let frame = document.getElementById('iFrame1');
-            //     frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*'); 
-            //     console.log('select-store',store_details)
-            // }, 3000)
-            
-            // MAP
-            // var stores = getStoresList();
-            // var regions = {}
-            // $.each( stores , function( key, val ) {
-            //     if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
-            //         obj = {};
-            //         obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>" + val.name + "</p></div>"
-            //         obj["attr"] = {}
-            //         obj["attr"]["href"] = "/stores/"+val.slug
-            //         regions[val.svgmap_region] = obj
-            //     }
-            // });
-            // load_map( store_details);
         }
 		loadMallDataCached(renderAll); 
     })
