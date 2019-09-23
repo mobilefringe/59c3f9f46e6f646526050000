@@ -152,7 +152,7 @@
             console.log('IE ' + detectIE());
             if(detectIE()){
                 console.log(getSVGMapURL())
-                $("#IE_map").src('getSVGMapURL()')
+                $("#IE_map").src(getSVGMapURL())
             }
         }
 		loadMallDataCached(renderAll); 
