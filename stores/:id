@@ -151,7 +151,7 @@
             $('#iFrame1').css('display','block')
             console.log('IE ' + detectIE());
             if(detectIE()){
-                console.log(getSVGMapURL())
+                console.log(getPropertyDetails().svgmap_url)
                 $('#iFrame1').remove();
                 $("#IE_map").attr("src", getSVGMapURL())
                 console.log('IE',$('#iFrame1').remove())
