@@ -154,7 +154,7 @@
                 console.log(getSVGMapURL())
                 $('#iFrame1').remove();
                 $("#IE_map").attr("src", getSVGMapURL())
-                console.log('', $("#IE_map"))
+                console.log('IE', $("#IE_map"))
             }
         }
 		loadMallDataCached(renderAll); 
