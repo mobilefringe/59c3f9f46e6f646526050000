@@ -150,6 +150,10 @@
             show_content();
             $('#iFrame1').css('display','block')
             console.log('IE ' + detectIE());
+            if(detectIE()){
+                console.log(getSVGMapURL())
+                $("#IE_map").src('')
+            }
         }
 		loadMallDataCached(renderAll); 
     })
