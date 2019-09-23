@@ -152,10 +152,8 @@
             console.log('IE ' + detectIE());
             if(detectIE()){
                 var svg_url = '//mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
-                console.log(svg_url)
                 $('#iFrame1').remove();
                 $("#IE_map").attr("src", svg_url)
-                console.log('IE',$('#iFrame1').remove())
             }
         }
 		loadMallDataCached(renderAll); 
