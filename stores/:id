@@ -152,6 +152,7 @@
             console.log('IE ' + detectIE());
             if(detectIE()){
                 console.log(getSVGMapURL())
+                $('#iFrame1').remove();
                 $("#IE_map").src(getSVGMapURL())
             }
         }
