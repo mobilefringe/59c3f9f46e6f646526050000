@@ -148,6 +148,7 @@
         
             show_content();
             $('#iFrame1').css('display','block')
+            msieversion()
         }
 		loadMallDataCached(renderAll); 
     })
