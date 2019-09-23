@@ -228,7 +228,7 @@
     }
     #iFrame1 {
         display: none;
-        min-height:400px;
+        min-height: 500px;
     }
     /*@media (max-width: 768px) {*/
     /*    html, iframe{*/
