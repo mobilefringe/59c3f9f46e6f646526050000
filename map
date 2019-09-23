@@ -58,13 +58,16 @@
     }
 </script>
 <style>
-    html, iframe, #IE_map{
+    html, iframe{
         scroll-behavior: smooth;
         height: calc(100vh - 101px) !important;
         top: 101px !important;
     }
+    #IE_map{
+        margin:auto;
+    }
     @media (max-width: 768px) {
-        html, iframe, #IE_map{
+        html, iframe{
             height: calc(100vh - 80px) !important;
         }
         .home_hours_phone {
