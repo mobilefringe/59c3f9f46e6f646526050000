@@ -230,12 +230,16 @@
         display: none;
         min-height: 500px;
     }
-    /*@media (max-width: 768px) {*/
+    @media (max-width: 768px) {
     /*    html, iframe{*/
     /*        height: calc(100vh - 80px) !important;*/
     /*    }*/
     /*    .home_hours_phone {*/
     /*        display:none!important;*/
     /*    }*/
-    /*}*/
+    #iFrame1 {
+        display: none;
+        min-height: 400px;
+    }
+    }
 </style>
