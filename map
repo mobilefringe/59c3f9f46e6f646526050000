@@ -11,7 +11,7 @@
         loadMallDataCached(renderPageData);
         
     });
-    window.addEventListener('message',, function(event) {
+    window.addEventListener('message', function(event) {
         // IMPORTANT: check the origin of the data! 
         if (event.origin.startsWith('https://mf-map.netlify.com')) { 
             // The data was sent from your site.
