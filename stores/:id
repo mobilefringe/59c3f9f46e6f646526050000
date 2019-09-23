@@ -148,7 +148,7 @@
         
             show_content();
             $('#iFrame1').css('display','block')
-            msieversion()
+            console.log('IE ' + detectIE());
         }
 		loadMallDataCached(renderAll); 
     })
