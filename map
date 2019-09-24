@@ -12,6 +12,9 @@
                 var svg_url = '//mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
                 $('#iFrame1').remove();
                 $("#IE_map").attr("src", svg_url)
+            } 
+            else {
+                $('#IE_map').remove();
             }
             show_content();
         }
