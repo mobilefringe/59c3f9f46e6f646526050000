@@ -213,6 +213,7 @@
     }
     #IE_map{
         margin:auto;
+        height:400px;
     }
     #iFrame1 {
         display: none;
