@@ -161,6 +161,7 @@
         }
 		loadMallDataCached(renderAll); 
     })
+    // Enhanced map code
     window.addEventListener('message', function(event) {
         // IMPORTANT: check the origin of the data! 
         if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "store-details-clicked") { 
