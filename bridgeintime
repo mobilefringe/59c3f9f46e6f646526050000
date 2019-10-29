@@ -182,7 +182,6 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            console.log(prefix)
             var pages_json = prefix + "/pages/billings-event-updates.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#updates_page_title').html(data.title.toUpperCase());
