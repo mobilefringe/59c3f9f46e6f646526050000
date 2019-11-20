@@ -168,7 +168,7 @@ $(document).ready(function(e){
         #mobileMap{
             display:block!important;
         }
-        #desktopMap{
+        #desktopMap, .home_hours_phone{
             display:none!important;
         }
     }
