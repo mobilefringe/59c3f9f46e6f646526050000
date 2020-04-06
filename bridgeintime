@@ -255,7 +255,8 @@
                     url : "//assets.mallmaverick.com/send_contact_email",
                     type: "POST",
                     data : { 
-                        'send_to': "Charlotte.Hanington@cushwake.com", 
+                        // 'send_to': "Charlotte.Hanington@cushwake.com", 
+                        'send_to': "irene@mobilefringe.com", 
                         'subject': "Bridge Through Time", 
                         'body': {
                             "Name": $('#full_name').val(), 
