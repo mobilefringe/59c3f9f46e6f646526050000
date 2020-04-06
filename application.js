@@ -718,7 +718,7 @@ function renderStoreDetails(container, template, collection, slug){
     $.each( item_list , function( key, val ) {
         var store_front_url = getAssetURL(val.id);
         if(store_front_url != "" && store_front_url != undefined && store_front_url != null) {
-            val.store_front = "//mallmaverick.com" + store_front_url;
+            val.store_front = "//assets.mallmaverick.com" + store_front_url;
             val.show_img = "display: block";
         } else {
             val.show_img = "display: none";    
