@@ -471,7 +471,9 @@ h4 {
         text-transform: uppercase;
     }
     .active_heading, .active_heading a{
-        color: $secondary;
+        // color: $secondary;
+        color: $primary;
+        font-weight: bold;
     }
     .row{
         border-bottom:1px solid #979797;
