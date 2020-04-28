@@ -65,7 +65,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size:20px;
-    color: #FFF;
+    color: #000;
     letter-spacing: 1.5px;
     line-height: 24px;
     text-shadow: 1px 2px 4px rgba(0,0,0,0.5);
@@ -92,7 +92,7 @@ body{
 }
 
 .hscbutton {
-    color: #fff !important;
+    color: #000 !important;
     display: inline-block;
     font-size: 22px;
     margin: 10px 20px;
@@ -124,11 +124,11 @@ a {
     display:block;
     width: calc(100% - 30px);
     background:rgba(0,0,0,0.7);
-    color:#fff;
+    color:#000;
     text-align:center;
     &:hover{
         background:#000;
-        color:#fff;
+        color:#000;
         text-decoration:none;
     }
 }
@@ -156,12 +156,12 @@ a {
     margin-bottom: 30px;
 }
 .social_link_blank{
-    color:#fff;
+    color:#000;
 }
 
 #latest_tweet_link:hover, #latest_fb_link:hover, .hours_link:hover, .social_link_blank:hover{
     text-decoration:underline;
-    color:#fff;
+    color:#000;
 }
 
 .visibilityhidden {
@@ -239,7 +239,7 @@ a {
     width:235px;
     display:inline-block;
     float: left;
-    color:#FFFFFF;
+    color:#000;
     font-weight:bold;
     font-size: 13px;
     line-height: 18px;
