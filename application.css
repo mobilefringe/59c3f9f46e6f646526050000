@@ -523,7 +523,7 @@ h4 {
         background: transparent;
         line-height: 22px;
         &:hover{
-            color:#fff;
+            color:#000;
             text-decoration:none;
         }
         &:before{
@@ -1161,7 +1161,7 @@ h4 {
     width:180px;
     display: inline-block;
     background: $primary;
-    color: #fff;
+    color: #000; //#fff;
     font-size: 22px;
     margin-top: 25px;
     padding:14px 0px 18px  0;
