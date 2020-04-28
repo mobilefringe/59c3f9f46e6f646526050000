@@ -239,7 +239,7 @@ a {
     width:235px;
     display:inline-block;
     float: left;
-    color:#FFFFFF;
+    color: #000; //#FFFFFF;
     font-weight:bold;
     font-size: 13px;
     line-height: 18px;
