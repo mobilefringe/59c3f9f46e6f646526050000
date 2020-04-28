@@ -474,6 +474,7 @@ h4 {
     .active_heading, .active_heading a{
         // color: $secondary;
         color: $primary;
+        font-weight: bold;
     }
     .row{
         border-bottom:1px solid #979797;
