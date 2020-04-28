@@ -1265,7 +1265,7 @@ h4 {
 
 .hours_heading{
     font-size: 24px;
-    color: $secondary;
+    color: $primary;
     letter-spacing: 0px;
     line-height: 28px;
     margin-bottom: 20px;
