@@ -7,8 +7,8 @@ For more information on asset types please see //www.getcodecloud.com/docs#SaSS
 
 
 /* COLOURS */
-$primary: #fb284c;
-$secondary: #49cbdc;
+$primary: #5BC072; //fb284c;
+$secondary: #F1D123; //#49cbdc;
 
 body{
     color:#58595b;
