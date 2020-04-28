@@ -109,6 +109,14 @@
             store_details = getStoreDetailsBySlug(slug);
             renderStoreDetails("#store_container","#store_template", store_details, slug);
             
+            var banner_repo = getRepoDetailsByName("Inside Page Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "background": "url(" + banner_image + ") center center" });
+                }
+            }
+            
             //PROMOS
             var store_promo_ids = store_details.promotions
             var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
