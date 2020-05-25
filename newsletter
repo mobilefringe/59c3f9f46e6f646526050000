@@ -29,6 +29,7 @@
                         I agree to receive communications from Billings Bridge Shopping Centre.
                     </label>
                 </div>
+                <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
             </div>
             <div class="row">
                 <div class="col-sm-12">
