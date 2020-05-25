@@ -13,7 +13,7 @@
         <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A547378B8FAE2FFF40D1D5DCDC566B52FFB5068E234D26BFE60B77343D00AC5C21C40C66E065C7AF7BDCBD7CC1309B931">
             <div class="row">
                 <div class="col-sm-6">
-                    <div><label>Name </label><input aria-label="Name" id="fieldName" maxlength="200" name="cm-name"></div>
+                    <label>Name </label><input aria-label="Name" id="fieldName" maxlength="200" name="cm-name">
                 </div>
                 <div class="col-sm-6">
                     <div><label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-qttjii-qttjii" required="" type="email"></div>
